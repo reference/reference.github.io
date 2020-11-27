@@ -163,7 +163,85 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><h1 id="为什么是Hexo"><a href="#为什么是Hexo" class="headerlink" title="为什么是Hexo?"></a>为什么是Hexo?</h1><pre><code>很难想像有一天Github倒下，全世界会发生什么。程序员都不写代码了么？还是人工智能彻底代替了人类？Github作为全球最大的同性恋，呸，代码托管网站，对软件行业的影响力是绝无仅有的。但是相对于国内来说，说倒就倒再常见不过。我之所以不选择简书，也是这个原因。我本来想买一个服务器，但是觉得费用花得实在没必要。所以想到了Hexo+github+域名的方式搭建一个自己的主页，专门把工作中遇到的疑难杂症都罗列出来，好处自然多多不用多说。</code></pre>
+    <section class="markdown-content"><h1 id="为什么是Hexo"><a href="#为什么是Hexo" class="headerlink" title="为什么是Hexo?"></a>为什么是Hexo?</h1><p>​        很难想像有一天Github倒下，全世界会发生什么。程序员都不写代码了么？还是人工智能彻底代替了人类？Github作为全球最大的同性恋，呸，代码托管网站，对软件行业的影响力是绝无仅有的。但是相对于国内来说，说倒就倒再常见不过。我之所以不选择简书，也是这个原因。我本来想买一个服务器，但是觉得费用花得实在没必要。所以想到了Hexo+github+域名的方式搭建一个自己的主页，专门把工作中遇到的疑难杂症都罗列出来，好处自然多多不用多说。</p>
+<h1 id="新版Mac-brew不能用了！"><a href="#新版Mac-brew不能用了！" class="headerlink" title="新版Mac brew不能用了！"></a>新版Mac brew不能用了！</h1><p>​      是的，brew 说不支持M1芯片，第一天买新电脑就想退货。</p>
+<h1 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h1><p>​      推荐用国内源, <a target="_blank" rel="noopener" href="http://nodejs.cn/download/" title="nodejs">nodejs</a></p>
+<h1 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h1><p>​        没啥可说的。</p>
+<h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><p>​      去一趟官网<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></p>
+<p>​      执行下面的命令：    </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> npm install hexo-cli -g</span></span><br></pre></td></tr></table></figure>
+
+<p>​        等着吧。</p>
+<p>​        安装有时候会很慢，这里可以暂停，然后用淘宝的镜像，淘宝的npm：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> npm config <span class="built_in">set</span> registry http://registry.npm.taobao.org  -- 使用淘宝的镜像网址</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> npm get registry http://registry.npm.taobao.org/</span></span><br></pre></td></tr></table></figure>
+
+<p>​        如果你发现以下错误</p>
+<p>![image-20201128005249690](/Users/admin/Library/Application Support/typora-user-images/image-20201128005249690.png)</p>
+<p>​        这时候你需要这么执行：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> sudo -s</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> npm install hexo-cli -g</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h1><p>​        找一个目录，准备创建一个博客文件夹，以后工作就在里面了。</p>
+<p>​        执行下面的命令开始初始化博客：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> hexo init <span class="string">&quot;blog&quot;</span>  <span class="comment">#blog是博客的名字，你可以随便起</span></span></span><br></pre></td></tr></table></figure>
+
+<p>​        如图：</p>
+<p>![image-20201127235203048](/Users/admin/Library/Application Support/typora-user-images/image-20201127235203048.png)</p>
+<h1 id="跑起来"><a href="#跑起来" class="headerlink" title="跑起来"></a>跑起来</h1><p>​        就是这么简单，是时候看看效果了，本地运行起来，执行命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> hexo generate</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> hexo server</span></span><br></pre></td></tr></table></figure>
+
+<p>​        如果没有报错的话，打开浏览器，输入下面的地址就可以看到一个默认丑的一逼的界面。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://localhost:4000</span><br></pre></td></tr></table></figure>
+
+<p>​        因为过于丑，所以不便展示了。</p>
+<h1 id="什么？不喜欢默认主题？"><a href="#什么？不喜欢默认主题？" class="headerlink" title="什么？不喜欢默认主题？"></a>什么？不喜欢默认主题？</h1><p>​        hexo 有很多人没事干就喜欢琢磨自己写主题，放到github上免费提供。更有闲人把这些主题收集起来，在下面的网址可以看到。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://hexo.io/themes/</span><br></pre></td></tr></table></figure>
+
+<p>​        没错，还是官网。来吧，我们还是来换一个主题吧。</p>
+<p>​        首先，你得选一个中意的主题，考验审美的时候到了。我见过有很多人的技术博客，技术写得还可以，就是博客感觉就是txt写的，没有一点审美。我选了下面一个主题：<a target="_blank" rel="noopener" href="https://github.com/yanm1ng/hexo-theme-vexo">Vexo</a></p>
+<img src="/Users/admin/Library/Application Support/typora-user-images/image-20201128000722588.png" alt="image-20201128000722588" style="zoom:50%;" />
+
+<p>​    点进去，进入github主页，照着他的介绍，我们开始执行命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% cd blog #先进我们的博客 不然玩什么</span><br><span class="line">% git clone https:&#x2F;&#x2F;github.com&#x2F;yanm1ng&#x2F;hexo-theme-vexo.git themes&#x2F;vexo #克隆到themes目录下</span><br><span class="line">% cp -R themes&#x2F;vexo&#x2F;_source&#x2F;* source&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>​    克隆完以后你会在themes目录下看到主题已经到本地了。</p>
+<img src="/Users/admin/Library/Application Support/typora-user-images/image-20201128001102217.png" alt="image-20201128001102217" style="zoom:50%;" />
+
+<p>​        现在我们要修改配置文件_config.yml，注意，这个文件是blog目录下的，vexo目录下也有一个，只不过那个是修改主题的。我们要修改的是整个的配置，所以，要修改blog目录下的。好啰嗦。</p>
+<p>​        打开blog目录下的_config.yml文件，拉到底你会发现底部有这么一行：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">themes: landscape</span><br></pre></td></tr></table></figure>
+
+<p>​        这行是系统默认的主题，改成我们的主题。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">themes: vexo</span><br></pre></td></tr></table></figure>
+
+<p>​        改完以后，再次跑起来，回到上面的步骤。你就会看到一个全新的主题。我就不展示了。</p>
+<h1 id="Github-Homepage"><a href="#Github-Homepage" class="headerlink" title="Github Homepage"></a>Github Homepage</h1><p>​        Github homepage允许你展示静态网页，所以我们创建一个Repository。这里一定要注意项目的命名。看下面是最规范的命名：</p>
+<img src="/Users/admin/Library/Application Support/typora-user-images/image-20201128001915880.png" alt="image-20201128001915880" style="zoom:50%;" />
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Owner/Owner.github.io</span><br></pre></td></tr></table></figure>
+
+<p>​        一定是这样，不然你就会在后面的访问中404.</p>
+<h1 id="发布到Github"><a href="#发布到Github" class="headerlink" title="发布到Github"></a>发布到Github</h1><p>​        首先，在发布之前，你需要在_config.yml里配置好，把你创建好的Repository地址复制下来，按照下面的格式写好。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repo: https://github.com/reference/reference.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>​        配置好以后，执行下面的命令，直接用hexo发布，不用管git提交的事情。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> hexo clean</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> hexo g <span class="comment">#生成静态界面</span></span></span><br><span class="line"><span class="meta">%</span><span class="bash"> hexo d <span class="comment">#发布</span></span></span><br></pre></td></tr></table></figure>
+
+<p>​        这样完了以后，在浏览器输入你的项目名字，不出意外就可以看到了。比如我的是：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://reference.github.io</span><br></pre></td></tr></table></figure>
+
+<h1 id="什么？想用自己的域名？安排"><a href="#什么？想用自己的域名？安排" class="headerlink" title="什么？想用自己的域名？安排"></a>什么？想用自己的域名？安排</h1><p>​        首先，你得去买个域名，万网最便宜我是这么觉得的。买好域名，实名认证好，把域名指向github来。在配置域名的时候要注意，你可以这么配置。</p>
+<img src="/Users/admin/Library/Application Support/typora-user-images/image-20201128003045693.png" alt="image-20201128003045693" style="zoom:50%;" />
+
+<p>​        官方推荐第二种。</p>
+<p>​        里面的ip是reference.github.io Ping出来的。</p>
+<h1 id="终于轮到干正事了，可以开始写博客了吧"><a href="#终于轮到干正事了，可以开始写博客了吧" class="headerlink" title="终于轮到干正事了，可以开始写博客了吧"></a>终于轮到干正事了，可以开始写博客了吧</h1><p>​        hexo使用markdown来写博客，它的原理大概就是把markdown生成静态页面，再把静态页面发布到github homepage上去。所以我们可以开始创建我们的第一篇文章。用命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> hexo n <span class="string">&quot;Hello Hexo&quot;</span> <span class="comment"># n 是 new的意思</span></span></span><br></pre></td></tr></table></figure>
+
+<p>​        文件会自动生成到下面的位置：</p>
+<p>![image-20201128003636564](/Users/admin/Library/Application Support/typora-user-images/image-20201128003636564.png)</p>
+<p>​        好了，写吧。写完了重复上面发布的流程。</p>
+<h1 id="最后，关于主题还想再说点"><a href="#最后，关于主题还想再说点" class="headerlink" title="最后，关于主题还想再说点"></a>最后，关于主题还想再说点</h1><p>​        我们看到主题里还有一个_config.yml文件，这个是配置主题的一些内容，没事可以瞎改改。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>​        第一篇博客就开始觉得心累，以后咋办        </p>
 </section>
     <!-- Tags START -->
     
@@ -234,7 +312,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AFHexo"><span class="toc-nav-text">为什么是Hexo?</span></a></li></ol>
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AFHexo"><span class="toc-nav-text">为什么是Hexo?</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%96%B0%E7%89%88Mac-brew%E4%B8%8D%E8%83%BD%E7%94%A8%E4%BA%86%EF%BC%81"><span class="toc-nav-text">新版Mac brew不能用了！</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85nodejs"><span class="toc-nav-text">安装nodejs</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85Git"><span class="toc-nav-text">安装Git</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85hexo"><span class="toc-nav-text">安装hexo</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2"><span class="toc-nav-text">创建博客</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E8%B7%91%E8%B5%B7%E6%9D%A5"><span class="toc-nav-text">跑起来</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E4%BB%80%E4%B9%88%EF%BC%9F%E4%B8%8D%E5%96%9C%E6%AC%A2%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98%EF%BC%9F"><span class="toc-nav-text">什么？不喜欢默认主题？</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Github-Homepage"><span class="toc-nav-text">Github Homepage</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%8F%91%E5%B8%83%E5%88%B0Github"><span class="toc-nav-text">发布到Github</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E4%BB%80%E4%B9%88%EF%BC%9F%E6%83%B3%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D%EF%BC%9F%E5%AE%89%E6%8E%92"><span class="toc-nav-text">什么？想用自己的域名？安排</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E7%BB%88%E4%BA%8E%E8%BD%AE%E5%88%B0%E5%B9%B2%E6%AD%A3%E4%BA%8B%E4%BA%86%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86%E5%90%A7"><span class="toc-nav-text">终于轮到干正事了，可以开始写博客了吧</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%9C%80%E5%90%8E%EF%BC%8C%E5%85%B3%E4%BA%8E%E4%B8%BB%E9%A2%98%E8%BF%98%E6%83%B3%E5%86%8D%E8%AF%B4%E7%82%B9"><span class="toc-nav-text">最后，关于主题还想再说点</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-nav-text">总结</span></a></li></ol>
     
   </div>
 </aside>
