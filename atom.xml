@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Scott Ban</title>
+  
+  <subtitle>这是一个工作博客</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2020-11-27T06:06:39.095Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Scott Ban</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IOS RSA加密与Java后台通讯</title>
+    <link href="http://example.com/2020/11/27/IOS-RSA%E5%8A%A0%E5%AF%86%E4%B8%8EJava%E5%90%8E%E5%8F%B0%E9%80%9A%E8%AE%AF/"/>
+    <id>http://example.com/2020/11/27/IOS-RSA%E5%8A%A0%E5%AF%86%E4%B8%8EJava%E5%90%8E%E5%8F%B0%E9%80%9A%E8%AE%AF/</id>
+    <published>2020-11-27T06:04:37.000Z</published>
+    <updated>2020-11-27T06:06:39.095Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="OpenSSL-安装"><a href="#OpenSSL-安装" class="headerlink" title="OpenSSL 安装"></a>OpenSSL 安装</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;OpenSSL-安装&quot;&gt;&lt;a href=&quot;#OpenSSL-安装&quot; class=&quot;headerlink&quot; title=&quot;OpenSSL 安装&quot;&gt;&lt;/a&gt;OpenSSL 安装&lt;/h1&gt;</summary>
+      
+    
+    
+    
+    
+    <category term="IOS RSA JAVA" scheme="http://example.com/tags/IOS-RSA-JAVA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello Hexo</title>
+    <link href="http://example.com/2020/11/27/Hello-Hexo/"/>
+    <id>http://example.com/2020/11/27/Hello-Hexo/</id>
+    <published>2020-11-27T05:54:13.000Z</published>
+    <updated>2020-11-27T06:07:06.774Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="为什么是Hexo"><a href="#为什么是Hexo" class="headerlink" title="为什么是Hexo?"></a>为什么是Hexo?</h1><pre><code>很难想像有一天Github倒下，全世界会发生什么。程序员都不写代码了么？还是人工智能彻底代替了人类？Github作为全球最大的同性恋，呸，代码托管网站，对软件行业的影响力是绝无仅有的。但是相对于国内来说，说倒就倒再常见不过。我之所以不选择简书，也是这个原因。我本来想买一个服务器，但是觉得费用花得实在没必要。所以想到了Hexo+github+域名的方式搭建一个自己的主页，专门把工作中遇到的疑难杂症都罗列出来，好处自然多多不用多说。</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;为什么是Hexo&quot;&gt;&lt;a href=&quot;#为什么是Hexo&quot; class=&quot;headerlink&quot; title=&quot;为什么是Hexo?&quot;&gt;&lt;/a&gt;为什么是Hexo?&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;很难想像有一天Github倒下，全世界会发生什么。程序员都不写代码了么？</summary>
+      
+    
+    
+    
+    
+    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
