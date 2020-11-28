@@ -163,7 +163,35 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><h1 id="OpenSSL-安装"><a href="#OpenSSL-安装" class="headerlink" title="OpenSSL 安装"></a>OpenSSL 安装</h1></section>
+    <section class="markdown-content"><h1 id="证书生成"><a href="#证书生成" class="headerlink" title="证书生成"></a>证书生成</h1><p>​        如果你在网上找不到一个能用的办法解决IOS RSA加密，那就对了，我找过，很多都不能用。这里做一个总结，方便以后使用。</p>
+<p>​        现在流行2048的证书，但是服务器如果要把私钥存成字段会发现位数太长。所以1024也能用。</p>
+<h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><p>​        <code>RSA</code>加密主要涉及  ❶<strong>服务端</strong>  (<code>Java</code>,<code>PHP</code>) ,❷<strong>客户端</strong>  (安卓,<code>iOS</code>)<br> <code>Java</code>,<code>Android</code>用到的的<strong>公钥</strong>、<strong>私钥</strong>格式相同，<strong>私钥</strong>需要<code>PKCS8</code>格式，默认生成是<code>PKCS1</code>格式<br> <code>PHP</code><strong>私钥</strong>需要<code>PKCS1</code>格式的 <em>(默认生成即可)</em><br> <code>iOS</code><strong>私钥</strong>需要<code>.p12</code>的文件格式，<strong>公钥</strong>需要<code>.der</code>格式的</p>
+<h1 id="密钥作用"><a href="#密钥作用" class="headerlink" title="密钥作用"></a>密钥作用</h1><pre><code>    **公钥** : 用于加密
+    **私钥** : 用于解密</code></pre>
+<h1 id="Mac终端生成步骤"><a href="#Mac终端生成步骤" class="headerlink" title="Mac终端生成步骤"></a>Mac终端生成步骤</h1><p>​            <a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=https://baike.baidu.com/item/openssl/5454803?fr=aladdin">openssl</a>:是一个强大的安全套接字层密码库，<a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=https://baike.baidu.com/item/Apache/6848636">Apache</a>使用它加密HTTPS，OpenSSH使用它加密<a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=https://baike.baidu.com/item/SSH/10407">SSH</a>，但是，你不应该只将其作为一个库来使用，它还是一个多用途的、跨平台的密码工具,一个自由的软件组织,专注做加密和解密的框架。</p>
+<h1 id="生成私钥-PHP"><a href="#生成私钥-PHP" class="headerlink" title="生成私钥 (PHP)"></a>生成私钥 (<code>PHP</code>)</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl genrsa -out rsa_private_key.pem 1024 #这里可以生成2048</span><br></pre></td></tr></table></figure>
+
+<p>​        该命令生成一个模长<code>2048</code>位,名字为<code>rsa_private_key.pem</code>、<code>PKCS1</code>格式的<code>RSA</code>私钥文件.</p>
+<p><strong><code>genrsa</code></strong>:指定生成算法使用<code>RSA</code><br> <strong><code>-out</code></strong>:后面参数是生成的私钥的文件名<br> <strong><code>2048</code></strong>:生成私钥的模长,单位字节(bits)</p>
+<h1 id="生成公钥-PHP-Java-Android"><a href="#生成公钥-PHP-Java-Android" class="headerlink" title="生成公钥 (PHP,Java,Android)"></a>生成公钥 (<code>PHP</code>,<code>Java</code>,<code>Android</code>)</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl rsa -in rsa_private_key.pem -pubout -out rsa_public_key.pem</span><br></pre></td></tr></table></figure>
+
+<h1 id="生成Java和Android的私钥-iOS可以跳过"><a href="#生成Java和Android的私钥-iOS可以跳过" class="headerlink" title="生成Java和Android的私钥(iOS可以跳过)"></a>生成<code>Java</code>和<code>Android</code>的私钥(<code>iOS</code>可以跳过)</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl pkcs8 -topk8 -inform PEM -in rsa_private_key.pem -outform PEM -nocrypt -out rsa_pkcs8_private_key.pem</span><br></pre></td></tr></table></figure>
+
+<p>生成名字为<code>rsa_pkcs8_private_key.pem</code>的私钥文件<br> <strong>Java</strong> 和 <strong>Android</strong>用到的密钥:<br> 公钥:<code>rsa_public_key.pem</code><br> 私钥:<code>rsa_pkcs8_private_key.pem</code></p>
+<h1 id="创建证书请求文件-iOS"><a href="#创建证书请求文件-iOS" class="headerlink" title="创建证书请求文件 (iOS)"></a>创建证书请求文件 (<code>iOS</code>)</h1><p>终端会提示输入国家、省市、所在地、组织、组织单位、常用名称、邮箱地址等信息，按要求填写(可以随便填写)，<strong>输入完对应信息后会提示输入一个密码</strong>:</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/20893054-1e934f374e3edea3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/736/format/webp" alt="tupian"></p>
+<p>最终会生成<code>rsacert.csr</code> 文件</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/20893054-b08a2b8c2b361591.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/378/format/webp" alt="tupian"></p>
+<h1 id="生成数字证书rsacert-crt-签名-有效期10年"><a href="#生成数字证书rsacert-crt-签名-有效期10年" class="headerlink" title="生成数字证书rsacert.crt,签名,有效期10年"></a>生成数字证书<code>rsacert.crt</code>,签名,有效期10年</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl x509 -req -days 3650 -in rsacert.csr -signkey rsa_private_key.pem -out rsacert.crt</span><br></pre></td></tr></table></figure>
+
+<p>​        用最开始生成的私钥<code>rsa_private_key.pem</code>和<code>rsacert.csr</code>证书请求文件生成一个数字证书<code>rsacert.crt</code></p>
+<h1 id="生成iOS使用的公钥文件public-key-der"><a href="#生成iOS使用的公钥文件public-key-der" class="headerlink" title="生成iOS使用的公钥文件public_key.der"></a>生成<code>iOS</code>使用的公钥文件<code>public_key.der</code></h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl x509 -outform der -in rsacert.crt -out public_key.der</span><br></pre></td></tr></table></figure>
+
+<p>​        使用<code>x509</code>工具自建CA。由于<code>x509</code>无法建立证书请求文件，所以只能使用<code>openssl req</code>来生成请求文件，然后使用<code>x509</code>来自签署, 也可以用来签署他人的证书请求，即为他人颁发证书。</p>
+<h1 id="生成iOS使用的私钥文件private-key-p12"><a href="#生成iOS使用的私钥文件private-key-p12" class="headerlink" title="生成iOS使用的私钥文件private_key.p12"></a>生成<code>iOS</code>使用的私钥文件<code>private_key.p12</code></h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl pkcs12 -export -out private_key.p12 -inkey rsa_private_key.pem -in rsacert.crt</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>知识点\</em></strong>:<br>终端会提示设置密码,该密码是<code>.p12</code>私钥的密码(用<code>private_key.p12</code>私钥解密时, 要用到该密码,<strong>需要记录下</strong>), 会提示再次输入检验刚才输入的密码.</p>
+</section>
     <!-- Tags START -->
     
       <div class="tags">
@@ -233,7 +261,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#OpenSSL-%E5%AE%89%E8%A3%85"><span class="toc-nav-text">OpenSSL 安装</span></a></li></ol>
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E8%AF%81%E4%B9%A6%E7%94%9F%E6%88%90"><span class="toc-nav-text">证书生成</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="toc-nav-text">知识点</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%AF%86%E9%92%A5%E4%BD%9C%E7%94%A8"><span class="toc-nav-text">密钥作用</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Mac%E7%BB%88%E7%AB%AF%E7%94%9F%E6%88%90%E6%AD%A5%E9%AA%A4"><span class="toc-nav-text">Mac终端生成步骤</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E7%94%9F%E6%88%90%E7%A7%81%E9%92%A5-PHP"><span class="toc-nav-text">生成私钥 (PHP)</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E7%94%9F%E6%88%90%E5%85%AC%E9%92%A5-PHP-Java-Android"><span class="toc-nav-text">生成公钥 (PHP,Java,Android)</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E7%94%9F%E6%88%90Java%E5%92%8CAndroid%E7%9A%84%E7%A7%81%E9%92%A5-iOS%E5%8F%AF%E4%BB%A5%E8%B7%B3%E8%BF%87"><span class="toc-nav-text">生成Java和Android的私钥(iOS可以跳过)</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%88%9B%E5%BB%BA%E8%AF%81%E4%B9%A6%E8%AF%B7%E6%B1%82%E6%96%87%E4%BB%B6-iOS"><span class="toc-nav-text">创建证书请求文件 (iOS)</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E7%94%9F%E6%88%90%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6rsacert-crt-%E7%AD%BE%E5%90%8D-%E6%9C%89%E6%95%88%E6%9C%9F10%E5%B9%B4"><span class="toc-nav-text">生成数字证书rsacert.crt,签名,有效期10年</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E7%94%9F%E6%88%90iOS%E4%BD%BF%E7%94%A8%E7%9A%84%E5%85%AC%E9%92%A5%E6%96%87%E4%BB%B6public-key-der"><span class="toc-nav-text">生成iOS使用的公钥文件public_key.der</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E7%94%9F%E6%88%90iOS%E4%BD%BF%E7%94%A8%E7%9A%84%E7%A7%81%E9%92%A5%E6%96%87%E4%BB%B6private-key-p12"><span class="toc-nav-text">生成iOS使用的私钥文件private_key.p12</span></a></li></ol>
     
   </div>
 </aside>
