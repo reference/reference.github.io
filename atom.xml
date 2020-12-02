@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-11-28T04:51:23.454Z</updated>
+  <updated>2020-12-02T06:19:52.034Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>浅说苹果内购流程</title>
+    <link href="http://example.com/2020/12/02/%E6%B5%85%E8%AF%B4%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD%E6%B5%81%E7%A8%8B/"/>
+    <id>http://example.com/2020/12/02/%E6%B5%85%E8%AF%B4%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD%E6%B5%81%E7%A8%8B/</id>
+    <published>2020-12-02T03:21:38.000Z</published>
+    <updated>2020-12-02T06:19:52.034Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="权威文档"><a href="#权威文档" class="headerlink" title="权威文档"></a>权威文档</h1><p>​    <a href="https://developer.apple.com/cn/in-app-purchase/">App 内购买项目</a></p><h1 id="基本要素"><a href="#基本要素" class="headerlink" title="基本要素"></a>基本要素</h1><p>​    哪些是基本要素呢？比如你得有开发者账号，你得会创建应用，你得先同意appstore后台的付费用户协议，只有这几个都有了你才能进行内购。</p><h1 id="创建内购项目"><a href="#创建内购项目" class="headerlink" title="创建内购项目"></a>创建内购项目</h1><img src="https://img.wenhairu.com/images/2020/12/02/WMxHj.png" style="zoom:50%;" /><p><img src="https://img.wenhairu.com/images/2020/12/02/WP6eg.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPAAK.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPmG3.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPq4o.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPFhf.md.png"></p><p>​    截图用手机截图。这些资料都填上，不然会报元数据丢失的错。填完点保存，像下面这样就说明添加成功了。</p><p>![](/Users/admin/Library/Application Support/typora-user-images/image-20201202131057336.png)</p><h1 id="创建sandbox测试账号"><a href="#创建sandbox测试账号" class="headerlink" title="创建sandbox测试账号"></a>创建sandbox测试账号</h1><p>​    在用户和访问-&gt;沙盒测试员里添加测试账号。</p><p>​    <img src="https://img.wenhairu.com/images/2020/12/02/WPYDd.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPfcH.png"></p><p>​    注意：</p><p>​        1、这里的电子邮件必须填写一个新注册的邮箱，不然你就等着采坑吧。点击确认以后，会受到一封同意邀请的邮件，点击里面的同意邀请测试账号就算创建好了。</p><p>​        2、密码你得记好了，以后用来登陆到测试账号的。</p><h1 id="给测试账号添加卡"><a href="#给测试账号添加卡" class="headerlink" title="给测试账号添加卡"></a>给测试账号添加卡</h1><p>​        既然是要内购，那没有卡怎么能行。</p><p>​        首先找到一个苹果6以上的机子，登陆测试账号，icloud也要登陆。</p><p>​        至此，账号配置就结束了。</p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>​        支付代码在我的Github有。<a href="https://github.com/reference/QTIAPManager">支付代码</a></p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.jianshu.com/p/72748db72a77">https://www.jianshu.com/p/72748db72a77</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;权威文档&quot;&gt;&lt;a href=&quot;#权威文档&quot; class=&quot;headerlink&quot; title=&quot;权威文档&quot;&gt;&lt;/a&gt;权威文档&lt;/h1&gt;&lt;p&gt;​    &lt;a href=&quot;https://developer.apple.com/cn/in-app-purchase/&quot;</summary>
+      
+    
+    
+    
+    
+    <category term="苹果内购" scheme="http://example.com/tags/%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD/"/>
+    
+  </entry>
   
   <entry>
     <title>IOS RSA加密与Java后台通讯</title>
