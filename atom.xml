@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-02T06:19:52.034Z</updated>
+  <updated>2020-12-03T16:57:53.500Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,13 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>IOS ArcGiS 加载天地图</title>
+    <link href="http://example.com/2020/12/04/IOS-ArcGiS-%E5%8A%A0%E8%BD%BD%E5%A4%A9%E5%9C%B0%E5%9B%BE/"/>
+    <id>http://example.com/2020/12/04/IOS-ArcGiS-%E5%8A%A0%E8%BD%BD%E5%A4%A9%E5%9C%B0%E5%9B%BE/</id>
+    <published>2020-12-03T16:27:07.000Z</published>
+    <updated>2020-12-03T16:57:53.500Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="天地图"><a href="#天地图" class="headerlink" title="天地图"></a>天地图</h1><p>​    一般用惯了百度地图和高德地图的人会问，这是个啥玩意。老实说我也不知道，但是做项目要用，国企项目经常用。这次给中国地震局做了一个活动断层勘察的app就用到了。本来用webview就能解决，但是考虑到勘察人员要去的地方可能没有网络，所以要考虑离线。甲方爸爸指定用天地图，所以用到了ArcGiS加载天地图瓦片来架构。这是个新奇的东西。网上资料寥寥无几，大概在github上找到了两个例子，连接地址放在最后。别现在就去看，给点面子让我教教你行么。</p><p>​    官网：<a href="http://lbs.tianditu.gov.cn/home.html">http://lbs.tianditu.gov.cn/home.html</a></p><h1 id="ArcGIS"><a href="#ArcGIS" class="headerlink" title="ArcGIS"></a>ArcGIS</h1><p>​    这个玩意用来干啥？GIS的意思大概就是跟地图相关，我写这篇文章没打算给你解释清楚是啥，你只要大概知道这是干啥的就达到我写文章的目的了。你见过加班回来还给你写博客教你东西的么，差不多得了。</p><p>​    这个玩意用一句话概括就是地图上能干啥都用它，划线，画点，画面，公交车路线，测量，标记，标注，你能看到在地图上能干的事情，基本都是用它来干的。这个玩意是个开源，被一个叫做esri的组织维护，官网：<a href="https://developers.arcgis.com/">https://developers.arcgis.com/</a></p><p>​    ArcGIS提供了很多平台的SDK支持，IOS、安卓、h5都有，一般IOS获得的方式很简单。就是下面这句：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pod &#39;ArcGIS-Runtime-SDK-iOS&#39;</span><br></pre></td></tr></table></figure><p>​    文档这里看：<a href="https://developers.arcgis.com/labs/browse/?product=ios&amp;topic=any">https://developers.arcgis.com/labs/browse/?product=ios&amp;topic=any</a></p><p>​    学点英文吧骚年，不然你可能像我一样，只能借助谷歌翻译。</p><p>​    加载地图跟使用苹果自带的MapKit很相似，加载一个地图也容易。但是加载瓦片地图就得大概知道些技术了。瓦片是什么？瓦片，其实就是一小块地图的图片，ArcGIS就像一个引擎一样，去加载很多图片，最后拼凑成一个完整的地图。在天地图里，通过url获得地图瓦片。</p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://github.com/xiaoyeZhang/ArcGisMapTool">https://github.com/xiaoyeZhang/ArcGisMapTool</a></p><p><a href="https://github.com/makeling/CustomTianDiTuLayerV100.0-ObjC">https://github.com/makeling/CustomTianDiTuLayerV100.0-ObjC</a></p><p><a href="https://github.com/crash-wu/SGLocationObjC">https://github.com/crash-wu/SGLocationObjC</a></p><p><a href="https://github.com/crash-wu/SGLocationUtil">https://github.com/crash-wu/SGLocationUtil</a></p><p>聚合的解决方案，案例，房屋中介地图找房</p><p><a href="https://github.com/xjf1990930/ArcGis-iOS-Cluster">https://github.com/xjf1990930/ArcGis-iOS-Cluster</a></p><p><a href="https://blog.csdn.net/weixin_30912051/article/details/94798193">https://blog.csdn.net/weixin_30912051/article/details/94798193</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;天地图&quot;&gt;&lt;a href=&quot;#天地图&quot; class=&quot;headerlink&quot; title=&quot;天地图&quot;&gt;&lt;/a&gt;天地图&lt;/h1&gt;&lt;p&gt;​    一般用惯了百度地图和高德地图的人会问，这是个啥玩意。老实说我也不知道，但是做项目要用，国企项目经常用。这次给中国地震局做了</summary>
+      
+    
+    
+    
+    
+    <category term="ArcGid 天地图" scheme="http://example.com/tags/ArcGid-%E5%A4%A9%E5%9C%B0%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>浅说苹果内购流程</title>
     <link href="http://example.com/2020/12/02/%E6%B5%85%E8%AF%B4%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD%E6%B5%81%E7%A8%8B/"/>
     <id>http://example.com/2020/12/02/%E6%B5%85%E8%AF%B4%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD%E6%B5%81%E7%A8%8B/</id>
     <published>2020-12-02T03:21:38.000Z</published>
-    <updated>2020-12-02T06:19:52.034Z</updated>
+    <updated>2020-12-03T16:50:29.833Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="权威文档"><a href="#权威文档" class="headerlink" title="权威文档"></a>权威文档</h1><p>​    <a href="https://developer.apple.com/cn/in-app-purchase/">App 内购买项目</a></p><h1 id="基本要素"><a href="#基本要素" class="headerlink" title="基本要素"></a>基本要素</h1><p>​    哪些是基本要素呢？比如你得有开发者账号，你得会创建应用，你得先同意appstore后台的付费用户协议，只有这几个都有了你才能进行内购。</p><h1 id="创建内购项目"><a href="#创建内购项目" class="headerlink" title="创建内购项目"></a>创建内购项目</h1><img src="https://img.wenhairu.com/images/2020/12/02/WMxHj.png" style="zoom:50%;" /><p><img src="https://img.wenhairu.com/images/2020/12/02/WP6eg.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPAAK.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPmG3.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPq4o.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPFhf.md.png"></p><p>​    截图用手机截图。这些资料都填上，不然会报元数据丢失的错。填完点保存，像下面这样就说明添加成功了。</p><p>![](/Users/admin/Library/Application Support/typora-user-images/image-20201202131057336.png)</p><h1 id="创建sandbox测试账号"><a href="#创建sandbox测试账号" class="headerlink" title="创建sandbox测试账号"></a>创建sandbox测试账号</h1><p>​    在用户和访问-&gt;沙盒测试员里添加测试账号。</p><p>​    <img src="https://img.wenhairu.com/images/2020/12/02/WPYDd.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPfcH.png"></p><p>​    注意：</p><p>​        1、这里的电子邮件必须填写一个新注册的邮箱，不然你就等着采坑吧。点击确认以后，会受到一封同意邀请的邮件，点击里面的同意邀请测试账号就算创建好了。</p><p>​        2、密码你得记好了，以后用来登陆到测试账号的。</p><h1 id="给测试账号添加卡"><a href="#给测试账号添加卡" class="headerlink" title="给测试账号添加卡"></a>给测试账号添加卡</h1><p>​        既然是要内购，那没有卡怎么能行。</p><p>​        首先找到一个苹果6以上的机子，登陆测试账号，icloud也要登陆。</p><p>​        至此，账号配置就结束了。</p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>​        支付代码在我的Github有。<a href="https://github.com/reference/QTIAPManager">支付代码</a></p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.jianshu.com/p/72748db72a77">https://www.jianshu.com/p/72748db72a77</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="权威文档"><a href="#权威文档" class="headerlink" title="权威文档"></a>权威文档</h1><p>​    <a href="https://developer.apple.com/cn/in-app-purchase/">App 内购买项目</a></p><h1 id="基本要素"><a href="#基本要素" class="headerlink" title="基本要素"></a>基本要素</h1><p>​    哪些是基本要素呢？比如你得有开发者账号，你得会创建应用，你得先同意appstore后台的付费用户协议，只有这几个都有了你才能进行内购。</p><h1 id="创建内购项目"><a href="#创建内购项目" class="headerlink" title="创建内购项目"></a>创建内购项目</h1><img src="https://img.wenhairu.com/images/2020/12/02/WMxHj.png" style="zoom:50%;" /><p><img src="https://img.wenhairu.com/images/2020/12/02/WP6eg.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPAAK.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPmG3.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPq4o.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPFhf.md.png"></p><p>​    截图用手机截图。这些资料都填上，不然会报元数据丢失的错。填完点保存就可以了。</p><h1 id="创建sandbox测试账号"><a href="#创建sandbox测试账号" class="headerlink" title="创建sandbox测试账号"></a>创建sandbox测试账号</h1><p>​    在用户和访问-&gt;沙盒测试员里添加测试账号。</p><p>​    <img src="https://img.wenhairu.com/images/2020/12/02/WPYDd.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPfcH.png"></p><p>​    注意：</p><p>​        1、这里的电子邮件必须填写一个新注册的邮箱，不然你就等着采坑吧。点击确认以后，会受到一封同意邀请的邮件，点击里面的同意邀请测试账号就算创建好了。</p><p>​        2、密码你得记好了，以后用来登陆到测试账号的。</p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>​        支付代码在我的Github有。<a href="https://github.com/reference/QTIAPManager">支付代码</a></p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.jianshu.com/p/72748db72a77">https://www.jianshu.com/p/72748db72a77</a></p>]]></content>
     
     
       

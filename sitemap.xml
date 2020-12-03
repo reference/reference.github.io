@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2020/12/04/IOS-ArcGiS-%E5%8A%A0%E8%BD%BD%E5%A4%A9%E5%9C%B0%E5%9B%BE/</loc>
+    
+    <lastmod>2020-12-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2020/12/02/%E6%B5%85%E8%AF%B4%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD%E6%B5%81%E7%A8%8B/</loc>
     
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-03</lastmod>
     
   </url>
   
@@ -46,29 +53,36 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://example.com/tags/%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <loc>http://example.com/tags/Hexo/</loc>
+    <lastmod>2020-12-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/Hexo/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <loc>http://example.com/tags/ArcGid-%E5%A4%A9%E5%9C%B0%E5%9B%BE/</loc>
+    <lastmod>2020-12-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/IOS-RSA-JAVA/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD/</loc>
+    <lastmod>2020-12-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
