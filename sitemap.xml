@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2020/12/04/Mac-%E4%B8%8A%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</loc>
+    
+    <lastmod>2020-12-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2020/12/04/IOS-ArcGiS-%E5%8A%A0%E8%BD%BD%E5%A4%A9%E5%9C%B0%E5%9B%BE/</loc>
     
     <lastmod>2020-12-03</lastmod>
@@ -67,7 +74,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/ArcGid-%E5%A4%A9%E5%9C%B0%E5%9B%BE/</loc>
+    <loc>http://example.com/tags/ArcGis-%E5%A4%A9%E5%9C%B0%E5%9B%BE/</loc>
     <lastmod>2020-12-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -75,6 +82,13 @@
   
   <url>
     <loc>http://example.com/tags/IOS-RSA-JAVA/</loc>
+    <lastmod>2020-12-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Mac-%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2020-12-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-03T16:57:53.500Z</updated>
+  <updated>2020-12-03T17:46:58.093Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Mac 上好用的工具软件</title>
+    <link href="http://example.com/2020/12/04/Mac-%E4%B8%8A%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
+    <id>http://example.com/2020/12/04/Mac-%E4%B8%8A%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</id>
+    <published>2020-12-03T17:26:27.000Z</published>
+    <updated>2020-12-03T17:46:58.093Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><p>Typora</p><p>官网：<a href="https://typora.io/">https://typora.io/</a></p><p>点评：用过最好用的markdown写作神器，没有之一。</p></li><li><p>Irvue</p><p>官网：AppStore上</p><p>点评：别再为桌面壁纸发愁了，高清免费，每天定时更换桌面，想自己换也可以。</p></li><li><p>Luminar</p><p>官网：<a href="https://www.luminartech.com/">https://www.luminartech.com/</a></p><p>点评：付费软件，高级的修图神器，支持RAW，无损图片质量，简单好用，有14天免费试用</p></li><li><p>DaVinci Resolve</p><p>官网：<a href="http://www.blackmagicdesign.com/products/davinciresolve/">http://www.blackmagicdesign.com/products/davinciresolve/</a></p><p>点评：电影工业唯一使用的后期调色工业软件，有免费版本，已经够使用了</p></li><li><p>Trojan-qt5</p><p>官网：<a href="https://tlanyan.me/trojan-clients-download/">https://tlanyan.me/trojan-clients-download/</a></p><p>点评：翻墙利器，稳定高速，收费，需要找到服务器</p></li><li><p>Charles</p><p>官网：<a href="https://www.charlesproxy.com/">https://www.charlesproxy.com/</a></p><p>点评：网络拦截</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Typora&lt;/p&gt;
+&lt;p&gt;官网：&lt;a href=&quot;https://typora.io/&quot;&gt;https://typora.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;点评：用过最好用的markdown写作神器，没有之一。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Irvue&lt;/</summary>
+      
+    
+    
+    
+    
+    <category term="Mac 工具" scheme="http://example.com/tags/Mac-%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>IOS ArcGiS 加载天地图</title>
     <link href="http://example.com/2020/12/04/IOS-ArcGiS-%E5%8A%A0%E8%BD%BD%E5%A4%A9%E5%9C%B0%E5%9B%BE/"/>
     <id>http://example.com/2020/12/04/IOS-ArcGiS-%E5%8A%A0%E8%BD%BD%E5%A4%A9%E5%9C%B0%E5%9B%BE/</id>
     <published>2020-12-03T16:27:07.000Z</published>
-    <updated>2020-12-03T16:57:53.500Z</updated>
+    <updated>2020-12-03T17:04:41.514Z</updated>
     
     <content type="html"><![CDATA[<h1 id="天地图"><a href="#天地图" class="headerlink" title="天地图"></a>天地图</h1><p>​    一般用惯了百度地图和高德地图的人会问，这是个啥玩意。老实说我也不知道，但是做项目要用，国企项目经常用。这次给中国地震局做了一个活动断层勘察的app就用到了。本来用webview就能解决，但是考虑到勘察人员要去的地方可能没有网络，所以要考虑离线。甲方爸爸指定用天地图，所以用到了ArcGiS加载天地图瓦片来架构。这是个新奇的东西。网上资料寥寥无几，大概在github上找到了两个例子，连接地址放在最后。别现在就去看，给点面子让我教教你行么。</p><p>​    官网：<a href="http://lbs.tianditu.gov.cn/home.html">http://lbs.tianditu.gov.cn/home.html</a></p><h1 id="ArcGIS"><a href="#ArcGIS" class="headerlink" title="ArcGIS"></a>ArcGIS</h1><p>​    这个玩意用来干啥？GIS的意思大概就是跟地图相关，我写这篇文章没打算给你解释清楚是啥，你只要大概知道这是干啥的就达到我写文章的目的了。你见过加班回来还给你写博客教你东西的么，差不多得了。</p><p>​    这个玩意用一句话概括就是地图上能干啥都用它，划线，画点，画面，公交车路线，测量，标记，标注，你能看到在地图上能干的事情，基本都是用它来干的。这个玩意是个开源，被一个叫做esri的组织维护，官网：<a href="https://developers.arcgis.com/">https://developers.arcgis.com/</a></p><p>​    ArcGIS提供了很多平台的SDK支持，IOS、安卓、h5都有，一般IOS获得的方式很简单。就是下面这句：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pod &#39;ArcGIS-Runtime-SDK-iOS&#39;</span><br></pre></td></tr></table></figure><p>​    文档这里看：<a href="https://developers.arcgis.com/labs/browse/?product=ios&amp;topic=any">https://developers.arcgis.com/labs/browse/?product=ios&amp;topic=any</a></p><p>​    学点英文吧骚年，不然你可能像我一样，只能借助谷歌翻译。</p><p>​    加载地图跟使用苹果自带的MapKit很相似，加载一个地图也容易。但是加载瓦片地图就得大概知道些技术了。瓦片是什么？瓦片，其实就是一小块地图的图片，ArcGIS就像一个引擎一样，去加载很多图片，最后拼凑成一个完整的地图。在天地图里，通过url获得地图瓦片。</p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://github.com/xiaoyeZhang/ArcGisMapTool">https://github.com/xiaoyeZhang/ArcGisMapTool</a></p><p><a href="https://github.com/makeling/CustomTianDiTuLayerV100.0-ObjC">https://github.com/makeling/CustomTianDiTuLayerV100.0-ObjC</a></p><p><a href="https://github.com/crash-wu/SGLocationObjC">https://github.com/crash-wu/SGLocationObjC</a></p><p><a href="https://github.com/crash-wu/SGLocationUtil">https://github.com/crash-wu/SGLocationUtil</a></p><p>聚合的解决方案，案例，房屋中介地图找房</p><p><a href="https://github.com/xjf1990930/ArcGis-iOS-Cluster">https://github.com/xjf1990930/ArcGis-iOS-Cluster</a></p><p><a href="https://blog.csdn.net/weixin_30912051/article/details/94798193">https://blog.csdn.net/weixin_30912051/article/details/94798193</a></p>]]></content>
     
@@ -34,7 +61,7 @@
     
     
     
-    <category term="ArcGid 天地图" scheme="http://example.com/tags/ArcGid-%E5%A4%A9%E5%9C%B0%E5%9B%BE/"/>
+    <category term="ArcGis 天地图" scheme="http://example.com/tags/ArcGis-%E5%A4%A9%E5%9C%B0%E5%9B%BE/"/>
     
   </entry>
   
