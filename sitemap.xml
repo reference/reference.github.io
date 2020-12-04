@@ -88,14 +88,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/IOS-RSA-JAVA/</loc>
+    <loc>http://example.com/tags/Mac-%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2020-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/Mac-%E5%B7%A5%E5%85%B7/</loc>
+    <loc>http://example.com/tags/IOS-RSA-JAVA/</loc>
     <lastmod>2020-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
