@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-04T06:07:15.804Z</updated>
+  <updated>2020-12-05T07:25:07.539Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SwiftUI 是历史的进步还是倒退？</title>
+    <link href="http://example.com/2020/12/05/SwiftUI-%E6%98%AF%E5%8E%86%E5%8F%B2%E7%9A%84%E8%BF%9B%E6%AD%A5%E8%BF%98%E6%98%AF%E5%80%92%E9%80%80%EF%BC%9F/"/>
+    <id>http://example.com/2020/12/05/SwiftUI-%E6%98%AF%E5%8E%86%E5%8F%B2%E7%9A%84%E8%BF%9B%E6%AD%A5%E8%BF%98%E6%98%AF%E5%80%92%E9%80%80%EF%BC%9F/</id>
+    <published>2020-12-05T07:17:02.000Z</published>
+    <updated>2020-12-05T07:25:07.539Z</updated>
+    
+    <content type="html"><![CDATA[<p>​        今天说说swiftui，算是一个老程序员的心声。第一次看到swiftui的时候，内心还是很欢喜的，但是在接触了一下想要用于项目的时候，我犹豫了。为什么呢？作为一个从2011年就开始被各种手写UI折磨的人来说，swiftui并没有真正解决我的需求，反而是storyboard解决了我的需求。我们都知道，在快速出产品占领市场的年代，如果速度慢就有可能一个项目就此黄了。我也经历了不少这样的项目。之前用过一个叫做Beeframework的框架，它的ui架构核心思想跟swiftui很相似，都试图用h5那一套思路来解决布局的问题，但是很麻烦，维护也不好维护。我个人认为，这个界面布局的发展应该是这样的：手写界面–&gt;swiftui–&gt;storyboard，但是现在是这样：手写界面-storyboard-swiftui。试问一下，哪个程序员喜欢写代码？如果妥妥拽拽就解决问题，效率还更高，何乐不为呢？</p><p>​        SwiftUI,I say No.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;​        今天说说swiftui，算是一个老程序员的心声。第一次看到swiftui的时候，内心还是很欢喜的，但是在接触了一下想要用于项目的时候，我犹豫了。为什么呢？作为一个从2011年就开始被各种手写UI折磨的人来说，swiftui并没有真正解决我的需求，反而是st</summary>
+      
+    
+    
+    
+    
+    <category term="SwiftUI" scheme="http://example.com/tags/SwiftUI/"/>
+    
+  </entry>
   
   <entry>
     <title>PS 人像修图教程</title>
