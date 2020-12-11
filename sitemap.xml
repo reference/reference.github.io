@@ -144,14 +144,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/SwiftUI/</loc>
+    <loc>http://example.com/tags/webP/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/webP/</loc>
+    <loc>http://example.com/tags/SwiftUI/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
