@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>班先生的备忘录</title>
+  <title>班</title>
   
   <subtitle>这是一个工作博客</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>http://example.com/</id>
   
   <author>
-    <name>Scott Ban</name>
+    <name>班殿宏</name>
     
   </author>
   
