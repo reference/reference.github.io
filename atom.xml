@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-05T07:25:07.539Z</updated>
+  <updated>2020-12-09T06:41:58.925Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mac2020 M1芯片下YYKit依赖的webP不支持模拟器编译解决方案</title>
+    <link href="http://example.com/2020/12/09/mac2020-M1%E8%8A%AF%E7%89%87%E4%B8%8BYYKit%E4%BE%9D%E8%B5%96%E7%9A%84webP%E4%B8%8D%E6%94%AF%E6%8C%81%E6%A8%A1%E6%8B%9F%E5%99%A8%E7%BC%96%E8%AF%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>http://example.com/2020/12/09/mac2020-M1%E8%8A%AF%E7%89%87%E4%B8%8BYYKit%E4%BE%9D%E8%B5%96%E7%9A%84webP%E4%B8%8D%E6%94%AF%E6%8C%81%E6%A8%A1%E6%8B%9F%E5%99%A8%E7%BC%96%E8%AF%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</id>
+    <published>2020-12-09T06:32:55.000Z</published>
+    <updated>2020-12-09T06:41:58.925Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>新版MacBook Pro 由于采用了M1芯片代替了原先的，有些库并不支持。如果项目中用到了YYKit，那恭喜你这个问题一定会遇到。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">in &#x2F;Users&#x2F;admin&#x2F;Desktop&#x2F;x&#x2F;code&#x2F;AFDAS&#x2F;Pods&#x2F;YYKit&#x2F;Vendor&#x2F;WebP.framework&#x2F;WebP(libwebpencode_la-config.o), building for iOS Simulator, but linking in object file built for iOS, for architecture arm64</span><br></pre></td></tr></table></figure><h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>最简单的解决方案就是替换掉/YYKit/Vendor/WebP.framework。webP是Google开发的一个库，所以我们直接去官网下载这个库。</p><p>我们找到2020年12月的这个版本，因为macbook是11月发布的。</p><p>下载地址：[<a href="http://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.1.0-rc2-ios-framework.tar.gz">libwebp-1.1.0-rc2-ios-framework.tar.gz</a>]</p><p><a href="http://downloads.webmproject.org/releases/webp/index.html">官方网址</a></p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://github.com/Xunqf/libwebp">https://github.com/Xunqf/libwebp</a></p><p><a href="https://www.jianshu.com/p/1f427707f922?utm_campaign=hugo">iOS利用SDWebImage加载webP图片</a></p><p><a href="https://www.jianshu.com/p/a74bc04a8c8c">解决sdwebimage/webp 与 yykit 的冲突</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h1&gt;&lt;p&gt;新版MacBook Pro 由于采用了M1芯片代替了原先的，有些库并不支持。如果项目中用到了YYKit，那恭喜你这个问题一定会遇到。&lt;/p&gt;</summary>
+      
+    
+    
+    
+    
+    <category term="webP" scheme="http://example.com/tags/webP/"/>
+    
+  </entry>
   
   <entry>
     <title>SwiftUI 是历史的进步还是倒退？</title>

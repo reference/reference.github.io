@@ -1,389 +1,143 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-  <meta name="description" content="Scott Ban&#39;s blog">
-  <meta name="keyword" content="hexo-theme, vuejs">
-  
-    <link rel="shortcut icon" href="/css/images/logo.png">
-  
-  <title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Scott Ban">
+
+
+    <meta name="subtitle" content="这是一个工作博客">
+
+
+
+
+<title>班先生的备忘录</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
     
-      班先生的备忘录
+    <link rel="stylesheet" href="/css/style.css">
     
-  </title>
-  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
-  
-  
-  
-  
-    <!-- MathJax support START -->
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <!-- MathJax support END -->
-  
 
 
-  
-<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="班先生的备忘录" type="application/atom+xml">
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="atom.xml" title="班先生的备忘录" type="application/atom+xml">
 </head>
-<div class="wechat-share">
-  <img src="/css/images/logo.png" />
-</div>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">班</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
 
-  <body>
-    <header class="header fixed-header">
-  <div class="header-container">
-    <a class="home-link" href="/">
-      <div class="logo"></div>
-      <span>班先生的备忘录</span>
-    </a>
-    <ul class="right-list">
-      
-        <li class="list-item">
-          
-            <a href="/" class="item-link active">Home</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/tags/" class="item-link">Tags</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/archives/" class="item-link">Archives</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/project/" class="item-link">Projects</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/about/" class="item-link">About</a>
-          
-        </li>
-      
-    </ul>
-    <div class="menu">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </div>
-    <div class="menu-mask">
-      <ul class="menu-list">
-        
-          <li class="menu-item">
-            
-              <a href="/" class="menu-link mobile-active">Home</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/tags/" class="menu-link">Tags</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/archives/" class="menu-link">Archives</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/project/" class="menu-link">Projects</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/about/" class="menu-link">About</a>
-            
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">班</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+            </div>
+        </div>
+    </nav>
+
 </header>
-
-    <main class="app-body">
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2020/12/05/SwiftUI-%E6%98%AF%E5%8E%86%E5%8F%B2%E7%9A%84%E8%BF%9B%E6%AD%A5%E8%BF%98%E6%98%AF%E5%80%92%E9%80%80%EF%BC%9F/">SwiftUI 是历史的进步还是倒退？</a>
-      </h2>
-      <p class="article-date">December 5, 2020</p>
-      
-        
-  <a href="/tags#SwiftUI" >
-    <span class="tag-code">SwiftUI</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          ​        今天说说swiftui，算是一个老程序员的心声。第一次看到swiftui的时候，内心还是很欢喜的，但是在接触了一下想要用于项目的时候，我犹豫了。为什么呢？作为一个从2011年就开始被各种手写UI折磨的人来说，swiftui并没有真正解决我的需求，反而是storyboard解 ...
-        
-      </div>
-      <a class="more" href="/2020/12/05/SwiftUI-%E6%98%AF%E5%8E%86%E5%8F%B2%E7%9A%84%E8%BF%9B%E6%AD%A5%E8%BF%98%E6%98%AF%E5%80%92%E9%80%80%EF%BC%9F/">阅读全文</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2020/12/04/PS-%E4%BA%BA%E5%83%8F%E4%BF%AE%E5%9B%BE%E6%95%99%E7%A8%8B/">PS 人像修图教程</a>
-      </h2>
-      <p class="article-date">December 4, 2020</p>
-      
-        
-  <a href="/tags#PS人像修图" >
-    <span class="tag-code">PS人像修图</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          课程
-
-
-
-
-
-案例
-
-
-
-
-
-
-
-
-工具插件
-Portraiture
-Noiseware
-
-PS Neural FiltersPs 内部滤镜，Portraiture的磨皮我感觉已经赶不上里面的皮肤平滑度了。
-
-
-RAW 免费图片下载这个网站
-相关课程中性灰磨皮
-拍照技巧
-Gilmar’Si ...
-        
-      </div>
-      <a class="more" href="/2020/12/04/PS-%E4%BA%BA%E5%83%8F%E4%BF%AE%E5%9B%BE%E6%95%99%E7%A8%8B/">阅读全文</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2020/12/04/Mac-%E4%B8%8A%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/">Mac 上好用的工具软件</a>
-      </h2>
-      <p class="article-date">December 4, 2020</p>
-      
-        
-  <a href="/tags#Mac 工具" >
-    <span class="tag-code">Mac 工具</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          
-Typora
-官网：https://typora.io/
-点评：用过最好用的markdown写作神器，没有之一。
-
-Irvue
-官网：AppStore上
-点评：别再为桌面壁纸发愁了，高清免费，每天定时更换桌面，想自己换也可以。
-
-Luminar
-官网：https://www.luminar ...
-        
-      </div>
-      <a class="more" href="/2020/12/04/Mac-%E4%B8%8A%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/">阅读全文</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2020/12/04/IOS-ArcGiS-%E5%8A%A0%E8%BD%BD%E5%A4%A9%E5%9C%B0%E5%9B%BE/">IOS ArcGiS 加载天地图</a>
-      </h2>
-      <p class="article-date">December 4, 2020</p>
-      
-        
-  <a href="/tags#ArcGis 天地图" >
-    <span class="tag-code">ArcGis 天地图</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          天地图​    一般用惯了百度地图和高德地图的人会问，这是个啥玩意。老实说我也不知道，但是做项目要用，国企项目经常用。这次给中国地震局做了一个活动断层勘察的app就用到了。本来用webview就能解决，但是考虑到勘察人员要去的地方可能没有网络，所以要考虑离线。甲方爸爸指定用天地图，所以用到了 ...
-        
-      </div>
-      <a class="more" href="/2020/12/04/IOS-ArcGiS-%E5%8A%A0%E8%BD%BD%E5%A4%A9%E5%9C%B0%E5%9B%BE/">阅读全文</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2020/12/02/%E6%B5%85%E8%AF%B4%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD%E6%B5%81%E7%A8%8B/">浅说苹果内购流程</a>
-      </h2>
-      <p class="article-date">December 2, 2020</p>
-      
-        
-  <a href="/tags#苹果内购" >
-    <span class="tag-code">苹果内购</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          权威文档​    App 内购买项目
-基本要素​    哪些是基本要素呢？比如你得有开发者账号，你得会创建应用，你得先同意appstore后台的付费用户协议，只有这几个都有了你才能进行内购。
-创建内购项目
-
-
-
-
-
-
-​    截图用手机截图。这些资料都填上，不然会报元数据丢失的错。填完点保 ...
-        
-      </div>
-      <a class="more" href="/2020/12/02/%E6%B5%85%E8%AF%B4%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD%E6%B5%81%E7%A8%8B/">阅读全文</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2020/11/27/IOS-RSA%E5%8A%A0%E5%AF%86%E4%B8%8EJava%E5%90%8E%E5%8F%B0%E9%80%9A%E8%AE%AF/">IOS RSA加密与Java后台通讯</a>
-      </h2>
-      <p class="article-date">November 27, 2020</p>
-      
-        
-  <a href="/tags#IOS RSA JAVA" >
-    <span class="tag-code">IOS RSA JAVA</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          证书生成​        如果你在网上找不到一个能用的办法解决IOS RSA加密，那就对了，我找过，很多都不能用。这里做一个总结，方便以后使用。
-​        现在流行2048的证书，但是服务器如果要把私钥存成字段会发现位数太长。所以1024也能用。
-知识点​        RSA加密主 ...
-        
-      </div>
-      <a class="more" href="/2020/11/27/IOS-RSA%E5%8A%A0%E5%AF%86%E4%B8%8EJava%E5%90%8E%E5%8F%B0%E9%80%9A%E8%AE%AF/">阅读全文</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2020/11/27/Hello-Hexo/">Hello Hexo</a>
-      </h2>
-      <p class="article-date">November 27, 2020</p>
-      
-        
-  <a href="/tags#Hexo" >
-    <span class="tag-code">Hexo</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          为什么是Hexo?​        很难想像有一天Github倒下，全世界会发生什么。程序员都不写代码了么？还是人工智能彻底代替了人类？Github作为全球最大的同性恋，呸，代码托管网站，对软件行业的影响力是绝无仅有的。但是相对于国内来说，说倒就倒再常见不过。我之所以不选择简书，也是这个原因 ...
-        
-      </div>
-      <a class="more" href="/2020/11/27/Hello-Hexo/">阅读全文</a>
-    </article>
-  
-
-  
-</main>
-
-
-    <div class="scroll-top">
-  <span class="arrow-icon"></span>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            
+    <div class="container">
+    <div class="intro">
+        <div class="avatar">
+            <a href="/archives"><img src="/image/avatar.jpeg"></a>
+        </div>
+        <div class="nickname">班殿宏</div>
+        <div class="description"><p>IOS开发工程师，10年开发经验。<br>做过项目类型包括：IM交友、商城、直播、地图服务、云盘、流媒体音乐播放、VOIP网络电话、支付、医疗设备接入、马甲包、股票、区块链金融等。</br></p>
 </div>
-    <footer class="app-footer">
-  <p class="copyright">
-    &copy; 2020 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
-    <br>
-    Theme by <a target="_blank" rel="noopener" href="https://github.com/yanm1ng">yanm1ng</a>
-  </p>
+        <div class="links">
+            
+                
+                    <a class="link-item" title="Blog" href="/archives">
+                        
+                        
+                            <i class="iconfont icon-blog"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="Github" target="_blank" rel="noopener" href="https://github.com/reference">
+                        
+                        
+                            <i class="iconfont icon-github"></i>
+                        
+                    </a>
+                
+            
+        </div>
+    </div>
+</div>
+
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Scott Ban | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
 </footer>
 
-<script>
-  function async(u, c) {
-    var d = document, t = 'script',
-      o = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    o.src = u;
-    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-    s.parentNode.insertBefore(o, s);
-  }
-</script>
-<script>
-  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
-    FastClick.attach(document.body);
-  })
-</script>
-
-<script>
-  var hasLine = 'true';
-  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
-    $('figure pre').each(function(i, block) {
-      var figure = $(this).parents('figure');
-      if (hasLine === 'false') {
-        figure.find('.gutter').hide();
-      }
-      var lang = figure.attr('class').split(' ')[1] || 'code';
-      var codeHtml = $(this).html();
-      var codeTag = document.createElement('code');
-      codeTag.className = lang;
-      codeTag.innerHTML = codeHtml;
-      $(this).attr('class', '').empty().html(codeTag);
-      figure.attr('data-lang', lang.toUpperCase());
-      hljs.highlightBlock(block);
-    });
-  })
-</script>
-<!-- Baidu Tongji -->
-
-
-<script src="/js/script.js"></script>
-
-  </body>
+    </div>
+</body>
 </html>

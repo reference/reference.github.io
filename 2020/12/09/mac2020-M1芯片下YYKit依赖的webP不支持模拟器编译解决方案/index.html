@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Scott Ban">
+
+
+    <meta name="subtitle" content="这是一个工作博客">
+
+
+
+
+<title>mac2020 M1芯片下YYKit依赖的webP不支持模拟器编译解决方案 | 班先生的备忘录</title>
+
+
+
+    <link rel="icon" href="../../../../favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="../../../../css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="../../../../js/script.js"></script>
+    
+    <script src="../../../../js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="atom.xml" title="班先生的备忘录" type="application/atom+xml">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">班</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="../../../../archives">Posts</a>
+                
+                    <a class="menu-item" href="../../../../tag">Tags</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">班</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="../../../../archives">Posts</a>
+                
+                    <a class="menu-item" href="../../../../tag">Tags</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">mac2020 M1芯片下YYKit依赖的webP不支持模拟器编译解决方案</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Scott Ban</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">December 9, 2020&nbsp;&nbsp;14:32:55</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>新版MacBook Pro 由于采用了M1芯片代替了原先的，有些库并不支持。如果项目中用到了YYKit，那恭喜你这个问题一定会遇到。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">in &#x2F;Users&#x2F;admin&#x2F;Desktop&#x2F;x&#x2F;code&#x2F;AFDAS&#x2F;Pods&#x2F;YYKit&#x2F;Vendor&#x2F;WebP.framework&#x2F;WebP(libwebpencode_la-config.o), building for iOS Simulator, but linking in object file built for iOS, for architecture arm64</span><br></pre></td></tr></table></figure>
+
+<h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>最简单的解决方案就是替换掉/YYKit/Vendor/WebP.framework。webP是Google开发的一个库，所以我们直接去官网下载这个库。</p>
+<p>我们找到2020年12月的这个版本，因为macbook是11月发布的。</p>
+<p>下载地址：[<a target="_blank" rel="noopener" href="http://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.1.0-rc2-ios-framework.tar.gz">libwebp-1.1.0-rc2-ios-framework.tar.gz</a>]</p>
+<p><a target="_blank" rel="noopener" href="http://downloads.webmproject.org/releases/webp/index.html">官方网址</a></p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://github.com/Xunqf/libwebp">https://github.com/Xunqf/libwebp</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/1f427707f922?utm_campaign=hugo">iOS利用SDWebImage加载webP图片</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/a74bc04a8c8c">解决sdwebimage/webp 与 yykit 的冲突</a></p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Scott Ban</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://example.com/2020/12/09/mac2020-M1%E8%8A%AF%E7%89%87%E4%B8%8BYYKit%E4%BE%9D%E8%B5%96%E7%9A%84webP%E4%B8%8D%E6%94%AF%E6%8C%81%E6%A8%A1%E6%8B%9F%E5%99%A8%E7%BC%96%E8%AF%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">http://example.com/2020/12/09/mac2020-M1%E8%8A%AF%E7%89%87%E4%B8%8BYYKit%E4%BE%9D%E8%B5%96%E7%9A%84webP%E4%B8%8D%E6%94%AF%E6%8C%81%E6%A8%A1%E6%8B%9F%E5%99%A8%E7%BC%96%E8%AF%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY</strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="../../../../tags/webP/"># webP</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="../../05/SwiftUI-%E6%98%AF%E5%8E%86%E5%8F%B2%E7%9A%84%E8%BF%9B%E6%AD%A5%E8%BF%98%E6%98%AF%E5%80%92%E9%80%80%EF%BC%9F/">SwiftUI 是历史的进步还是倒退？</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Scott Ban | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
