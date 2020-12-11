@@ -70,7 +70,7 @@
         <div class="container">
             <div class="navbar-header">
                 <div>
-                    <a href="/">🅱️</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                    <a href="/">🅱️</a><a id="mobile-toggle-theme">·&nbsp;</a>
                 </div>
                 <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
             </div>
@@ -105,35 +105,41 @@
         <h2 class="post-title"></h2>
         
         <section class="post-content">
-            <h1 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h1><hr>
-<h3 id="活动断层采集子系统"><a href="#活动断层采集子系统" class="headerlink" title="活动断层采集子系统"></a>活动断层采集子系统</h3><blockquote>
+            <h2 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h2><blockquote>
+<p><em>以下项目目前不在维护的代码经过再次封装打包出售，不涉及公司隐私，有需要的朋友联系微信：<b>scottban</b>，添加时注明来意，谢谢。</em></p>
+</blockquote>
+<details>
+  <summary><b>活动断层采集子系统</b>（2020年11月-2020年12月）</summary>
+
 <ul>
-<li>时间：2020年11月至2020年12月</li>
-</ul>
-<ul>
-<li>项目简介：活动断层采集子系统是给中国国家地震局做的一款内部使用的APP，用于帮助外部作业人员采集活动断层的信息并上传到服务器。</li>
-</ul>
-<ul>
-<li><p>技术点：</p>
+<li><p>时间</p>
+<blockquote>
+<p>2020年11月至2020年12月</p>
+</blockquote>
+</li>
+<li><p>项目简介</p>
+<blockquote>
+<p>活动断层采集子系统是给中国国家地震局做的一款内部使用的APP，用于帮助外部作业人员采集活动断层的信息并上传到服务器。项目采用了ArcGIS和天地图来作为地图服务，因为考虑到采集地可能在山区，无网络环境下使用了sqlite进行数据存储。</p>
+</blockquote>
+</li>
+<li><p>技术点</p>
 <blockquote>
 <p>1、ArcGIS SDK加载天地图瓦片图层</p>
 <p>2、使用ArcGIS在图层上进行绘图</p>
 </blockquote>
 </li>
-</ul>
-<ul>
 <li><p>架构</p>
 <blockquote>
 <p>1、语言：Objective-C</p>
-<p>2、网络请求：AFNetworking</p>
-<p>3、UI:Storyboard</p>
-<p>4、数据库：sqlite + BGFMDB</p>
-<p>5、地图服务：ArcGIS  + 天地图图层</p>
+<p>2、网络请求：<a target="_blank" rel="noopener" href="https://github.com/AFNetworking/AFNetworking">AFNetworking</a></p>
+<p>3、UI:Storyboard + <a target="_blank" rel="noopener" href="https://github.com/reference/BDToolKit">BDToolKit</a> + <a target="_blank" rel="noopener" href="https://github.com/xinyzhao/ZXToolbox">ZXToolbox</a></p>
+<p>4、数据库：sqlite + <a target="_blank" rel="noopener" href="https://github.com/huangzhibiao/BGFMDB">BGFMDB</a></p>
+<p>5、地图服务：<a target="_blank" rel="noopener" href="https://developers.arcgis.com/">ArcGIS SDK</a> + <a target="_blank" rel="noopener" href="https://www.tianditu.gov.cn/">天地图图层</a></p>
+<p>6、其他：<em>YYKit SDWebImage IQKeyboardManager MJRefresh SVProgressHUD Reachability等</em></p>
 </blockquote>
 </li>
-</ul>
-</blockquote>
-<p>项目截图</p>
+<li><p>项目截图</p>
+<blockquote>
 <table>
 <thead>
 <tr>
@@ -146,6 +152,80 @@
 <td align="center">ArcGIS+天地图</td>
 </tr>
 </tbody></table>
+</blockquote>
+</li>
+<li><p>开发人员</p>
+<blockquote>
+<p>IOS © 班殿宏</p>
+<p>Android © <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43966262?spm=1001.2101.3001.5113">王超</a></p>
+</blockquote>
+</li>
+<li><p>公司</p>
+<blockquote>
+<p>© <em>中国软件与技术服务股份有限公司</em></p>
+</blockquote>
+</details>
+
+</li>
+</ul>
+<details>
+  <summary><b>铺小满</b>（2020年08月-2020年10月）</summary>
+
+<ul>
+<li><p>时间</p>
+<blockquote>
+<p>2020年08月至2020年10月</p>
+</blockquote>
+</li>
+<li><p>项目简介</p>
+<blockquote>
+<p>铺小满是一款本地化工具类型的APP,主要为商铺提供直播带货，店铺管理，店铺分销，会员返利，会员裂变，增加优惠券，大转盘抽奖，商分销，拼团，秒杀等功能来帮助商户锁定私域流量。</p>
+</blockquote>
+</li>
+<li><p>技术点</p>
+<blockquote>
+<p>1、使用腾讯直播SDK实现推拉流、直播</p>
+<p>2、使用websocket实现聊天系统</p>
+<p>3、支持微信登陆、微信支付、支付宝支付</p>
+</blockquote>
+</li>
+<li><p>架构</p>
+<blockquote>
+<p>1、语言：Objective-C</p>
+<p>2、网络请求：<a target="_blank" rel="noopener" href="https://github.com/AFNetworking/AFNetworking">AFNetworking</a></p>
+<p>3、UI:Storyboard + <a target="_blank" rel="noopener" href="https://github.com/reference/BDToolKit">BDToolKit</a> + <a target="_blank" rel="noopener" href="https://github.com/xinyzhao/ZXToolbox">ZXToolbox</a></p>
+<p>4、直播：腾讯直播SDK</p>
+<p>5、聊天系统：WebSocket + <a target="_blank" rel="noopener" href="https://github.com/facebookarchive/SocketRocket">SocketRocket</a></p>
+</blockquote>
+</li>
+<li><p>项目截图</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://img.wenhairu.com/images/2020/12/11/Wtwr0.png" width="200"/></th>
+<th align="center"><img src="https://img.wenhairu.com/images/2020/12/11/Wtluf.png" width="200"/></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">首页</td>
+<td align="center">ArcGIS+天地图</td>
+</tr>
+</tbody></table>
+</blockquote>
+</li>
+<li><p>开发人员</p>
+<blockquote>
+<p>IOS © 班殿宏</p>
+<p>Android © 超哥</p>
+</blockquote>
+</li>
+<li><p>公司</p>
+<blockquote>
+<p>© <em>安徽铺小满网络科技合伙企业（有限合伙）</em></p>
+</blockquote>
+</details></li>
+</ul>
 
         </section>
     </article>

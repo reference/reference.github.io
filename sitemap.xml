@@ -102,14 +102,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/Mac-%E5%B7%A5%E5%85%B7/</loc>
+    <loc>http://example.com/tags/ArcGis-%E5%A4%A9%E5%9C%B0%E5%9B%BE/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/ArcGis-%E5%A4%A9%E5%9C%B0%E5%9B%BE/</loc>
+    <loc>http://example.com/tags/Mac-%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -130,14 +130,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/webP/</loc>
+    <loc>http://example.com/tags/%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD/</loc>
+    <loc>http://example.com/tags/webP/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
