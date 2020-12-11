@@ -102,7 +102,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/IOS-RSA-JAVA/</loc>
+    <loc>http://example.com/tags/Mac-%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -116,20 +116,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/Mac-%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2020-12-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD/</loc>
-    <lastmod>2020-12-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/tags/PS%E4%BA%BA%E5%83%8F%E4%BF%AE%E5%9B%BE/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
@@ -137,7 +123,21 @@
   </url>
   
   <url>
+    <loc>http://example.com/tags/IOS-RSA-JAVA/</loc>
+    <lastmod>2020-12-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/tags/webP/</loc>
+    <lastmod>2020-12-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
