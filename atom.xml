@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-09T06:41:58.925Z</updated>
+  <updated>2020-12-11T17:10:50.246Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Realm</title>
+    <link href="http://example.com/2020/12/12/Realm/"/>
+    <id>http://example.com/2020/12/12/Realm/</id>
+    <published>2020-12-11T17:08:14.000Z</published>
+    <updated>2020-12-11T17:10:50.246Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Realm 用于替代sqlite</p><h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><p>Realm的源码地址：<a href="https://github.com/realm/realm-cocoa">https://github.com/realm/realm-cocoa</a></p><p>编译使用到<a href="https://github.com/realm/jazzy">jazzy</a></p><h1 id="jazzy"><a href="#jazzy" class="headerlink" title="jazzy"></a>jazzy</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jazzy is a command-line utility that generates documentation for Swift or Objective-C</span><br></pre></td></tr></table></figure><h1 id="数据库工具"><a href="#数据库工具" class="headerlink" title="数据库工具"></a>数据库工具</h1><p><a href="https://realm.io/products/realm-studio/">Realm-Studio</a></p><p>Mac 下载地址：<a href="https://realm.io/docs">https://realm.io/docs</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;Realm 用于替代sqlite&lt;/p&gt;
+&lt;h1 id=&quot;编译&quot;&gt;&lt;a href=&quot;#编译&quot; class=&quot;headerlink&quot; titl</summary>
+      
+    
+    
+    
+    
+    <category term="Realm" scheme="http://example.com/tags/Realm/"/>
+    
+  </entry>
   
   <entry>
     <title>mac2020 M1芯片下YYKit依赖的webP不支持模拟器编译解决方案</title>

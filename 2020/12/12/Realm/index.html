@@ -14,7 +14,7 @@
 
 
 
-<title>mac2020 M1芯片下YYKit依赖的webP不支持模拟器编译解决方案 | 🅱️an</title>
+<title>Realm | 🅱️an</title>
 
 
 
@@ -167,7 +167,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">mac2020 M1芯片下YYKit依赖的webP不支持模拟器编译解决方案</h1>
+            <h1 class="post-title">Realm</h1>
             
                 <div class="post-meta">
                     
@@ -176,7 +176,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">2020年12月09日&nbsp;&nbsp;14:32:55</a>
+                        Date: <a href="#">2020年12月12日&nbsp;&nbsp;1:08:14</a>
                         </span>
                     
                     
@@ -185,16 +185,13 @@
         </header>
 
         <div class="post-content">
-            <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>新版MacBook Pro 由于采用了M1芯片代替了原先的，有些库并不支持。如果项目中用到了YYKit，那恭喜你这个问题一定会遇到。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">in &#x2F;Users&#x2F;admin&#x2F;Desktop&#x2F;x&#x2F;code&#x2F;AFDAS&#x2F;Pods&#x2F;YYKit&#x2F;Vendor&#x2F;WebP.framework&#x2F;WebP(libwebpencode_la-config.o), building for iOS Simulator, but linking in object file built for iOS, for architecture arm64</span><br></pre></td></tr></table></figure>
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Realm 用于替代sqlite</p>
+<h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><p>Realm的源码地址：<a target="_blank" rel="noopener" href="https://github.com/realm/realm-cocoa">https://github.com/realm/realm-cocoa</a></p>
+<p>编译使用到<a target="_blank" rel="noopener" href="https://github.com/realm/jazzy">jazzy</a></p>
+<h1 id="jazzy"><a href="#jazzy" class="headerlink" title="jazzy"></a>jazzy</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jazzy is a command-line utility that generates documentation for Swift or Objective-C</span><br></pre></td></tr></table></figure>
 
-<h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>最简单的解决方案就是替换掉/YYKit/Vendor/WebP.framework。webP是Google开发的一个库，所以我们直接去官网下载这个库。</p>
-<p>我们找到2020年12月的这个版本，因为macbook是11月发布的。</p>
-<p>下载地址：[<a target="_blank" rel="noopener" href="http://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.1.0-rc2-ios-framework.tar.gz">libwebp-1.1.0-rc2-ios-framework.tar.gz</a>]</p>
-<p><a target="_blank" rel="noopener" href="http://downloads.webmproject.org/releases/webp/index.html">官方网址</a></p>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://github.com/Xunqf/libwebp">https://github.com/Xunqf/libwebp</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/1f427707f922?utm_campaign=hugo">iOS利用SDWebImage加载webP图片</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/a74bc04a8c8c">解决sdwebimage/webp 与 yykit 的冲突</a></p>
+<h1 id="数据库工具"><a href="#数据库工具" class="headerlink" title="数据库工具"></a>数据库工具</h1><p><a target="_blank" rel="noopener" href="https://realm.io/products/realm-studio/">Realm-Studio</a></p>
+<p>Mac 下载地址：<a target="_blank" rel="noopener" href="https://realm.io/docs">https://realm.io/docs</a></p>
 
         </div>
 
@@ -223,7 +220,7 @@
                 <span class="tag">
                     
                     
-                        <a href="../../../../tags/webP/"># webP</a>
+                        <a href="../../../../tags/Realm/"># Realm</a>
                     
                         
                 </span>
@@ -236,10 +233,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="../../12/Realm/">Realm</a>
             
-            
-            <a class="next" rel="next" href="../../05/SwiftUI-%E6%98%AF%E5%8E%86%E5%8F%B2%E7%9A%84%E8%BF%9B%E6%AD%A5%E8%BF%98%E6%98%AF%E5%80%92%E9%80%80%EF%BC%9F/">SwiftUI 是历史的进步还是倒退？</a>
+            <a class="next" rel="next" href="../../09/mac2020-M1%E8%8A%AF%E7%89%87%E4%B8%8BYYKit%E4%BE%9D%E8%B5%96%E7%9A%84webP%E4%B8%8D%E6%94%AF%E6%8C%81%E6%A8%A1%E6%8B%9F%E5%99%A8%E7%BC%96%E8%AF%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">mac2020 M1芯片下YYKit依赖的webP不支持模拟器编译解决方案</a>
             
         </section>
 
