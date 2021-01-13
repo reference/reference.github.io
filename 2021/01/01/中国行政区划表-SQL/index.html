@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="班殿宏">
+
+
+    <meta name="subtitle" content="这是一个工作博客">
+
+
+
+
+<title>中国行政区划表-SQL | 🅱️an</title>
+
+
+
+    <link rel="icon" href="../../../../favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="../../../../css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="../../../../js/script.js"></script>
+    
+    <script src="../../../../js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="atom.xml" title="🅱️an" type="application/atom+xml">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">🅱️</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="../../../../archives">Posts</a>
+                
+                    <a class="menu-item" href="../../../../tags">Tags</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">🅱️</a><a id="mobile-toggle-theme">·&nbsp;</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="../../../../archives">Posts</a>
+                
+                    <a class="menu-item" href="../../../../tags">Tags</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">底部</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">中国行政区划表-SQL</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">班殿宏</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2021年01月01日&nbsp;&nbsp;12:57:29</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h1><p><a target="_blank" rel="noopener" href="https://github.com/reference/org_division">Division</a></p>
+<h1 id="查询方法"><a href="#查询方法" class="headerlink" title="查询方法"></a>查询方法</h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--SELECT * from org_division WHERE parent_id=&#x27;root&#x27; ORDER BY create_time ASC;</span></span><br><span class="line"></span><br><span class="line">     <span class="comment">--查询市</span></span><br><span class="line">     <span class="comment">--SELECT * from org_division WHERE parent_id=&#x27;20c49eb015cf48e9a45eee413578e62f&#x27;;</span></span><br><span class="line"></span><br><span class="line">     <span class="comment">--查询区</span></span><br><span class="line">     <span class="comment">--SELECT * from org_division WHERE parent_id=&#x27;13afafd6a30f4169a11a6ef8174b6581&#x27;;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">NSString *path &#x3D; [[NSBundle mainBundle] pathForResource:@&quot;4330d398bfc148e2964492aead40b907&quot; ofType:@&quot;sqlite3&quot;];</span><br><span class="line">    FMDatabase *fmdb &#x3D; [FMDatabase databaseWithPath:path];</span><br><span class="line">    </span><br><span class="line">    if ([fmdb open]) &#123;</span><br><span class="line">        fmdb.logsErrors &#x3D; YES;</span><br><span class="line">        &#x2F;&#x2F;1.query</span><br><span class="line">        NSString *query &#x3D; [NSString stringWithFormat:@&quot;SELECT * from org_division WHERE parent_id&#x3D;&#39;%@&#39; ORDER BY create_time ASC&quot;,parentId &#x3D;&#x3D; nil ? @&quot;root&quot; : parentId];</span><br><span class="line">        FMResultSet *rs &#x3D; [fmdb executeQuery:query];</span><br><span class="line">        &#x2F;&#x2F; 2.遍历结果集</span><br><span class="line">        NSMutableArray *arrM &#x3D; [NSMutableArray array];</span><br><span class="line">        while (rs.next) &#123;</span><br><span class="line">            NSMutableDictionary* dictM &#x3D; [[NSMutableDictionary alloc] init];</span><br><span class="line">            for (int i&#x3D;0;i&lt;[[[rs columnNameToIndexMap] allKeys] count];i++) &#123;</span><br><span class="line">                dictM[[rs columnNameForIndex:i]] &#x3D; [rs objectForColumnIndex:i];</span><br><span class="line">            &#125;</span><br><span class="line">            GPAdministrativeDivisionsModel *m &#x3D; [GPAdministrativeDivisionsModel new];</span><br><span class="line">            m.divisionCode &#x3D; dictM[@&quot;division_code&quot;];</span><br><span class="line">            m.divisionName &#x3D; dictM[@&quot;division_name&quot;];</span><br><span class="line">            m.divisionId &#x3D; dictM[@&quot;division_id&quot;];</span><br><span class="line">            m.parentId &#x3D; dictM[@&quot;parent_id&quot;];</span><br><span class="line">            m.divisionType &#x3D; @&quot;&quot;;</span><br><span class="line">            &#x2F;&#x2F;单独处理4个直辖市</span><br><span class="line">            if ([m.divisionName isEqualToString:@&quot;北京市&quot;] || [m.divisionName isEqualToString:@&quot;上海市&quot;]</span><br><span class="line">                || [m.divisionName isEqualToString:@&quot;天津市&quot;] || [m.divisionName isEqualToString:@&quot;重庆市&quot;]) &#123;</span><br><span class="line">                m.divisionType &#x3D; @&quot;Municipality&quot;;</span><br><span class="line">            &#125;</span><br><span class="line">            [arrM addObject:m];</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;&#x2F;查询完后要关闭rs，不然会报@&quot;Warning: there is at least one open result set around after performing</span><br><span class="line">        [rs close];</span><br><span class="line">        [fmdb close];</span><br><span class="line">        if (completion) &#123;</span><br><span class="line">            completion(arrM,nil);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        NSLog(@&quot;db is not open.&quot;);</span><br><span class="line">        if (completion) &#123;</span><br><span class="line">            completion(nil,[NSError errorWithDomain:NSURLErrorDomain code:@&quot;400&quot; userInfo:@&#123;NSLocalizedDescriptionKey:@&quot;内部数据库打开失败&quot;&#125;]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>班殿宏</span>
+                    </p>
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020 班殿宏 版权所有</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="../../../../tags/sql/"># sql</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="../ios%E5%AE%9E%E7%8E%B0%E8%BD%A8%E8%BF%B9%E9%87%87%E9%9B%86/">ios实现轨迹采集</a>
+            
+            
+            <a class="next" rel="next" href="../../../../2020/12/31/ArcGis-%E5%9C%B0%E5%9B%BE%E6%A0%87%E8%AE%B0%E5%92%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%B9%E5%87%BA%E6%A1%86/">ArcGis 地图标记和自定义弹出框</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 班殿宏 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>

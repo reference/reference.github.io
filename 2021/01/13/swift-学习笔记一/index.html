@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="班殿宏">
+
+
+    <meta name="subtitle" content="这是一个工作博客">
+
+
+
+
+<title>swift 学习笔记一 | 🅱️an</title>
+
+
+
+    <link rel="icon" href="../../../../favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="../../../../css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="../../../../js/script.js"></script>
+    
+    <script src="../../../../js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="atom.xml" title="🅱️an" type="application/atom+xml">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">🅱️</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="../../../../archives">Posts</a>
+                
+                    <a class="menu-item" href="../../../../tags">Tags</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">🅱️</a><a id="mobile-toggle-theme">·&nbsp;</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="../../../../archives">Posts</a>
+                
+                    <a class="menu-item" href="../../../../tags">Tags</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">底部</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">swift 学习笔记一</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">班殿宏</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2021年01月13日&nbsp;&nbsp;22:26:57</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h3 id="类型别名"><a href="#类型别名" class="headerlink" title="类型别名"></a>类型别名</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typealias</span> newname = type</span><br><span class="line"></span><br><span class="line">typealis <span class="type">Feet</span> = <span class="type">Int</span></span><br><span class="line"><span class="keyword">var</span> feet: <span class="type">Feet</span> = <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> variableName = &lt;initial value&gt;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> name = <span class="string">&quot;ban&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>输出</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">println</span>(<span class="string">&quot;\(name)&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="可选-Optionals-类型"><a href="#可选-Optionals-类型" class="headerlink" title="可选(Optionals)类型"></a>可选(Optionals)类型</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Swift</span> 的可选（<span class="type">Optional</span>）类型，用于处理值缺失的情况。可选表示<span class="string">&quot;那儿有一个值，并且它等于 x &quot;</span>或者<span class="string">&quot;那儿没有值&quot;</span>。</span><br><span class="line"><span class="type">Swfit</span>语言定义后缀？作为命名类型<span class="type">Optional</span>的简写，换句话说，以下两种声明是相等的：</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> optionalInteger: <span class="type">Int?</span></span><br><span class="line"><span class="keyword">var</span> optionalInteger: <span class="type">Optional</span>&lt;<span class="type">Int</span>&gt;</span><br><span class="line">在这两种情况下，变量 optionalInteger 都是可选整数类型。注意，在类型和 ?之间没有空格。</span><br><span class="line"></span><br><span class="line"><span class="type">Optional</span> 是一个含有两种情况的枚举，<span class="type">None</span> 和 <span class="type">Some</span>(<span class="type">T</span>)，用来表示可能有或可能没有值。任何类型都可以明确声明为（或者隐式转换）可选类型。当声明一个可选类型的时候，要确保用括号给 ? 操作符一个合适的范围。例如，声明可选整数数组，应该写成 (<span class="type">Int</span>[])? 写成 <span class="type">Int</span>[]? 会报错。</span><br><span class="line"></span><br><span class="line">当你声明一个可选变量或者可选属性的时候没有提供初始值，它的值会默认为 <span class="literal">nil</span>。</span><br><span class="line"></span><br><span class="line">可选项遵照 <span class="type">LogicValue</span> 协议，因此可以出现在布尔环境中。在这种情况下，如果可选类型<span class="type">T?</span>包含类型为<span class="type">T</span>的任何值（也就是说它的值是 <span class="type">Optional</span>.<span class="type">Some</span>(<span class="type">T</span>) ），这个可选类型等于 <span class="literal">true</span>，反之为 <span class="literal">false</span>。</span><br><span class="line"></span><br><span class="line">如果一个可选类型的实例包含一个值，你可以用后缀操作符 ！来访问这个值，如下所示：</span><br><span class="line"></span><br><span class="line">optionalInteger = <span class="number">42</span></span><br><span class="line">optionalInteger! <span class="comment">// 42</span></span><br><span class="line">使用操作符！去获取值为<span class="literal">nil</span>的可选变量会有运行时错误。</span><br><span class="line"></span><br><span class="line">你可以用可选链接和可选绑定选择性执行可选表达式上的操作。如果值为<span class="literal">nil</span>，任何操作都不会执行，也不会有运行报错。</span><br><span class="line"></span><br><span class="line">让我们来详细看下以下实例来了解 <span class="type">Swift</span> 中可选类型的应用:</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> Cocoa</span><br><span class="line"><span class="keyword">var</span> myString:<span class="type">String?</span> = <span class="literal">nil</span></span><br><span class="line"><span class="keyword">if</span> myString != <span class="literal">nil</span> &#123;</span><br><span class="line">    <span class="built_in">print</span>(myString)</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;字符串为 nil&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line">以上程序执行结果为：</span><br><span class="line">字符串为 <span class="literal">nil</span></span><br><span class="line"></span><br><span class="line">可选类型类似于<span class="type">Objective</span>-<span class="type">C</span>中指针的<span class="literal">nil</span>值，但是<span class="literal">nil</span>只对类(<span class="class"><span class="keyword">class</span>)有用，而可选类型对所有的类型都可用，并且更安全。</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">强制解析</span></span><br><span class="line"><span class="class">当你确定可选类型确实包含值之后，你可以在可选的名字后面加一个感叹号（!）来获取值。这个感叹号表示&quot;我知道这个可选有值，请使用它。&quot;这被称为可选值的强制解析（<span class="title">forced</span> <span class="title">unwrapping</span>）。</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">实例如下：</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"><span class="title">import</span> <span class="title">Cocoa</span></span></span><br><span class="line"><span class="class"><span class="title">var</span> <span class="title">myString</span>:<span class="title">String</span>?</span></span><br><span class="line"><span class="class"><span class="title">myString</span> = &quot;<span class="title">Hello</span>, <span class="title">Swift</span>!&quot;</span></span><br><span class="line"><span class="class"><span class="title">if</span> <span class="title">myString</span> != <span class="title">nil</span> </span>&#123;</span><br><span class="line">   <span class="built_in">print</span>(myString)</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">   <span class="built_in">print</span>(<span class="string">&quot;myString 值为 nil&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line">以上程序执行结果为：</span><br><span class="line"></span><br><span class="line"><span class="type">Optional</span>(<span class="string">&quot;Hello, Swift!&quot;</span>)</span><br><span class="line">强制解析可选值，使用感叹号（!）：</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> Cocoa</span><br><span class="line"><span class="keyword">var</span> myString:<span class="type">String?</span></span><br><span class="line">myString = <span class="string">&quot;Hello, Swift!&quot;</span></span><br><span class="line"><span class="keyword">if</span> myString != <span class="literal">nil</span> &#123;</span><br><span class="line">   <span class="comment">// 强制解析</span></span><br><span class="line">   <span class="built_in">print</span>( myString! )</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">   <span class="built_in">print</span>(<span class="string">&quot;myString 值为 nil&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line">以上程序执行结果为：</span><br><span class="line"></span><br><span class="line"><span class="type">Hello</span>, <span class="type">Swift!</span></span><br><span class="line"></span><br><span class="line">注意：</span><br><span class="line">使用!来获取一个不存在的可选值会导致运行时错误。使用!来强制解析值之前，一定要确定可选包含一个非<span class="literal">nil</span>的值。</span><br><span class="line"></span><br><span class="line">自动解析</span><br><span class="line">你可以在声明可选变量时使用感叹号（!）替换问号（?）。这样可选变量在使用时就不需要再加一个感叹号（!）来获取值，它会自动解析。</span><br><span class="line"></span><br><span class="line">实例如下：</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> Cocoa</span><br><span class="line"><span class="keyword">var</span> myString:<span class="type">String!</span></span><br><span class="line">myString = <span class="string">&quot;Hello, Swift!&quot;</span></span><br><span class="line"><span class="keyword">if</span> myString != <span class="literal">nil</span> &#123;</span><br><span class="line">   <span class="built_in">print</span>(myString)</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">   <span class="built_in">print</span>(<span class="string">&quot;myString 值为 nil&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line">以上程序执行结果为：</span><br><span class="line"></span><br><span class="line"><span class="type">Hello</span>, <span class="type">Swift!</span></span><br><span class="line">可选绑定</span><br><span class="line">使用可选绑定（<span class="keyword">optional</span> binding）来判断可选类型是否包含值，如果包含就把值赋给一个临时常量或者变量。可选绑定可以用在<span class="keyword">if</span>和<span class="keyword">while</span>语句中来对可选类型的值进行判断并把值赋给一个常量或者变量。</span><br><span class="line"></span><br><span class="line">像下面这样在<span class="keyword">if</span>语句中写一个可选绑定：</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> constantName = someOptional &#123;</span><br><span class="line">    statements</span><br><span class="line">&#125;</span><br><span class="line">让我们来看下一个简单的可选绑定实例：</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> Cocoa</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> myString:<span class="type">String?</span></span><br><span class="line"></span><br><span class="line">myString = <span class="string">&quot;Hello, Swift!&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> yourString = myString &#123;</span><br><span class="line">   <span class="built_in">print</span>(<span class="string">&quot;你的字符串值为 - \(yourString)&quot;</span>)</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">   <span class="built_in">print</span>(<span class="string">&quot;你的字符串没有值&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line">以上程序执行结果为：</span><br><span class="line"></span><br><span class="line">你的字符串值为 - <span class="type">Hello</span>, <span class="type">Swift!</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> constantName = &lt;initial value&gt;</span><br><span class="line"><span class="keyword">let</span> name = <span class="string">&quot;ban&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>类型标注</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> constantName:&lt;data type&gt; = &lt;<span class="keyword">optional</span> initial value&gt;</span><br><span class="line"><span class="keyword">var</span> name: <span class="type">String</span> = <span class="string">&quot;ban&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Unicode 支持</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> 名字 = <span class="string">&quot;ban&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h3><ul>
+<li>if</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> boolean_expression &#123;</span><br><span class="line">   <span class="comment">/* 如果布尔表达式为真将执行的语句 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> varA:<span class="type">Int</span> = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">if</span> varA &lt; <span class="number">20</span> &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;varA 小于 20&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>if else</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> boolean_expression_1 &#123;</span><br><span class="line">   <span class="comment">/* 如果 boolean_expression_1 表达式为 true 则执行该语句 */</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> boolean_expression_2 &#123;</span><br><span class="line">   <span class="comment">/* 如果 boolean_expression_2 表达式为 true 则执行该语句 */</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> boolean_expression_3 &#123;</span><br><span class="line">   <span class="comment">/* 如果 boolean_expression_3 表达式为 true 则执行该语句 */</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">   <span class="comment">/* 如果以上所有条件表达式都不为 true 则执行该语句 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>嵌套If</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> boolean_expression_1 &#123;</span><br><span class="line">   <span class="comment">/* 当 boolean_expression_1 表达式 true 时执行 */</span></span><br><span class="line">   <span class="keyword">if</span> boolean_expression_2 &#123;</span><br><span class="line">      <span class="comment">/* 当 boolean_expression_1 表达式 true 时执行 */</span></span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>switch</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> expression &#123;</span><br><span class="line">   <span class="keyword">case</span> expression1  :</span><br><span class="line">      statement(s)</span><br><span class="line">      <span class="keyword">fallthrough</span> <span class="comment">/* 可选 */</span></span><br><span class="line">   <span class="keyword">case</span> expression2, expression3  :</span><br><span class="line">      statement(s)</span><br><span class="line">      <span class="keyword">fallthrough</span> <span class="comment">/* 可选 */</span></span><br><span class="line">   <span class="keyword">default</span> : <span class="comment">/* 可选 */</span></span><br><span class="line">      statement(s);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意：在大多数语言中，switch 语句块中，case 要紧跟 break，否则 case 之后的语句会顺序运行，而在 Swift 语言中，默认是不会执行下去的，switch 也会终止。如果你想在 Swift 中让 case 之后的语句会按顺序继续运行，则需要使用 fallthrough 语句。</p>
+</blockquote>
+<h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><ul>
+<li>for in</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> index <span class="keyword">in</span> <span class="keyword">var</span> &#123;</span><br><span class="line">   循环体</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> index <span class="keyword">in</span> <span class="number">1</span>...<span class="number">5</span> &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\(index) 乘于 5 为：\(index * 5)&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>闭区间操作符（…）</p>
+</blockquote>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> someInts:[<span class="type">Int</span>] = [<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>]</span><br><span class="line"><span class="keyword">for</span> index <span class="keyword">in</span> someInts &#123;</span><br><span class="line">   <span class="built_in">print</span>( <span class="string">&quot;index 的值为 \(index)&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>while</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> condition</span><br><span class="line">&#123;</span><br><span class="line">   statement(s)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>数字 0, 字符串 ‘0’ 和 “”, 空的 list(), 及未定义的变量都为 <strong>false</strong> ，其他的则都为 <strong>true</strong>。</p>
+</blockquote>
+<ul>
+<li>repeat…while</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">repeat</span></span><br><span class="line">&#123;</span><br><span class="line">   statement(s);</span><br><span class="line">&#125;<span class="keyword">while</span>( condition );</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>类似 do..while</p>
+</blockquote>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><ul>
+<li>空字符串</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">&quot;&quot;</span></span><br><span class="line"><span class="keyword">var</span> name = <span class="type">String</span>()</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>字符串拼接</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">&quot;ban&quot;</span></span><br><span class="line">name += <span class="string">&quot;dianhong&quot;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>字符串常量不能被修改。即使用let声明的。</p>
+</blockquote>
+<ul>
+<li>字符串长度</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\(string.<span class="built_in">count</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">&quot;ban&quot;</span></span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;\(name.count)&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>字符串内容比较</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">stringA == stringB</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Unicode字符串</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">stringA.utf8</span><br><span class="line">stringA.utf16</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>字符串运算</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">isEmpty 判断字符串是否为空，返回布尔值</span><br><span class="line">hasPrefix(<span class="keyword">prefix</span>: <span class="type">String</span>) 检查字符串是否拥有特定前缀</span><br><span class="line">hasSuffix(suffix: <span class="type">String</span>) 检查字符串是否拥有特定后缀。</span><br><span class="line"><span class="type">Int</span>(<span class="type">String</span>) 转换字符串数字为整型</span><br><span class="line"><span class="type">String</span>.<span class="built_in">count</span> 计算字符串的长度</span><br><span class="line">utf8 可以通过遍历 <span class="type">String</span> 的 utf8 属性来访问它的 <span class="type">UTF</span>-<span class="number">8</span> 编码</span><br><span class="line">utf16 可以通过遍历 <span class="type">String</span> 的 utf8 属性来访问它的 utf16 编码</span><br><span class="line">unicodeScalars 可以通过遍历<span class="type">String</span>值的unicodeScalars属性来访问它的 <span class="type">Unicode</span> 标量编码.</span><br><span class="line">+ 连接两个字符串，并返回一个新的字符串</span><br><span class="line">+= 连接操作符两边的字符串并将新字符串赋值给左边的操作符变量</span><br><span class="line">== 判断两个字符串是否相等</span><br><span class="line">&lt; 比较两个字符串，对两个字符串的字母逐一比较。</span><br><span class="line">!= 比较两个字符串是否不相等。</span><br></pre></td></tr></table></figure>
+
+<h3 id="字符-Character"><a href="#字符-Character" class="headerlink" title="字符(Character)"></a>字符(Character)</h3><blockquote>
+<p>字符只有一个</p>
+<p>字符不能为空</p>
+</blockquote>
+<ul>
+<li>字符串连接字符</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> varA:<span class="type">String</span> = <span class="string">&quot;Hello &quot;</span></span><br><span class="line"><span class="keyword">let</span> varB:<span class="type">Character</span> = <span class="string">&quot;G&quot;</span></span><br><span class="line">varA.append( varB )</span><br></pre></td></tr></table></figure>
+
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>班殿宏</span>
+                    </p>
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020 班殿宏 版权所有</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="../../../../tags/swift%E7%AC%94%E8%AE%B0/"># swift笔记</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="../../01/ios%E5%AE%9E%E7%8E%B0%E8%BD%A8%E8%BF%B9%E9%87%87%E9%9B%86/">ios实现轨迹采集</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 班殿宏 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
