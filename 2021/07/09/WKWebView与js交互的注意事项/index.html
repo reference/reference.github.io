@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="班殿宏">
+
+
+    <meta name="subtitle" content="这是一个工作博客">
+
+
+
+
+<title>WKWebView与js交互的注意事项 | 🅱️an</title>
+
+
+
+    <link rel="icon" href="../../../../favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="../../../../css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="../../../../js/script.js"></script>
+    
+    <script src="../../../../js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="atom.xml" title="🅱️an" type="application/atom+xml">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">🅱️</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="../../../../archives">Posts</a>
+                
+                    <a class="menu-item" href="../../../../tags">Tags</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">🅱️</a><a id="mobile-toggle-theme">·&nbsp;</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="../../../../archives">Posts</a>
+                
+                    <a class="menu-item" href="../../../../tags">Tags</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">底部</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">WKWebView与js交互的注意事项</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">班殿宏</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2021年07月09日&nbsp;&nbsp;10:27:22</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <ul>
+<li><h5 id="WKWebView简单使用"><a href="#WKWebView简单使用" class="headerlink" title="WKWebView简单使用"></a>WKWebView简单使用</h5><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/5cf0d241ae12">例子</a></p>
+</li>
+</ul>
+<ul>
+<li><h4 id="js调用原生"><a href="#js调用原生" class="headerlink" title="js调用原生"></a>js调用原生</h4></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">window.webkit.messageHandlers.&lt;name&gt;.postMessage(&lt;messageBody&gt;)</span><br><span class="line">&#x2F;&#x2F;其中&lt;name&gt;，就是上面方法里的第二个参数&#96;name&#96;。</span><br><span class="line">&#x2F;&#x2F;例如我们调用API的时候第二个参数填@&quot;Share&quot;，那么在JS里就是:</span><br><span class="line">&#x2F;&#x2F;window.webkit.messageHandlers.Share.postMessage(&lt;messageBody&gt;)</span><br><span class="line">&#x2F;&#x2F;&lt;messageBody&gt;是一个键值对，键是body，值可以有多种类型的参数。</span><br><span class="line">&#x2F;&#x2F; 在&#96;WKScriptMessageHandler&#96;协议中，我们可以看到mssage是&#96;WKScriptMessage&#96;类型，有一个属性叫body。</span><br><span class="line">&#x2F;&#x2F; 而注释里写明了body 的类型：</span><br><span class="line">Allowed types are NSNumber, NSString, NSDate, NSArray, NSDictionary, and NSNull.</span><br><span class="line">————————————————</span><br><span class="line">版权声明：本文为CSDN博主「Haley_Wong」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。</span><br><span class="line">原文链接：https:&#x2F;&#x2F;blog.csdn.net&#x2F;u011619283&#x2F;article&#x2F;details&#x2F;52135988</span><br></pre></td></tr></table></figure>
+
+<p>！！！注意：<messageBody>不可以不传参，否则不会调用。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 传null</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">scanClick</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">window</span>.webkit.messageHandlers.ScanAction.postMessage(<span class="literal">null</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 传字典              </span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">shareClick</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">window</span>.webkit.messageHandlers.Share.postMessage(&#123;<span class="attr">title</span>:<span class="string">&#x27;测试分享的标题&#x27;</span>,<span class="attr">content</span>:<span class="string">&#x27;测试分享的内容&#x27;</span>,<span class="attr">url</span>:<span class="string">&#x27;http://www.baidu.com&#x27;</span>&#125;);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 传字符串</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">playSound</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line">    <span class="built_in">window</span>.webkit.messageHandlers.PlaySound.postMessage(<span class="string">&#x27;shake_sound_male.wav&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 传数组</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">colorClick</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">window</span>.webkit.messageHandlers.Color.postMessage([<span class="number">67</span>,<span class="number">205</span>,<span class="number">128</span>,<span class="number">0.5</span>]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/u011619283/article/details/52135988">参考</a></p>
+<ul>
+<li><h4 id="原生调用JS"><a href="#原生调用JS" class="headerlink" title="原生调用JS"></a>原生调用JS</h4><p>JS</p>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;demo&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">            <span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params">name</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="built_in">console</span>.log(name);</span></span><br><span class="line"><span class="javascript">                <span class="built_in">document</span>.getElementById(<span class="string">&quot;demo&quot;</span>).innerHTML = name;</span></span><br><span class="line">            &#125;</span><br><span class="line">        <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>​    Objective-C</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">NSString *jsStr &#x3D; [NSString stringWithFormat:@&quot;test(&#39;%@&#39;)&quot;,@&quot;what the hell&quot;];[self.webView evaluateJavaScript:jsStr completionHandler:^(id _Nullable result, NSError * _Nullable error) &#123;</span><br><span class="line">     NSLog(@&quot;%@--%@&quot;,result,error);</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><h5 id="原生调用VUE"><a href="#原生调用VUE" class="headerlink" title="原生调用VUE"></a>原生调用VUE</h5><p>VUE</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">export default&#123;</span><br><span class="line">    ...</span><br><span class="line">    created()&#123;</span><br><span class="line">        window.nativeCallJS &#x3D; this.nativeCallJS</span><br><span class="line">    &#125;,</span><br><span class="line">    methods:&#123;</span><br><span class="line">        nativeCallJS:function(data)&#123;</span><br><span class="line">            return &quot;return data&quot; + data</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Objective-C</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">window.webkit.messageHandlers.jsCallNative.postMessage(params)</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Yao_MG/article/details/107237764">参考1</a> <a target="_blank" rel="noopener" href="https://blog.csdn.net/lyyo_cd/article/details/84304864">参考2</a></p>
+</li>
+<li><h5 id="OC向JS传值"><a href="#OC向JS传值" class="headerlink" title="OC向JS传值"></a>OC向JS传值</h5><p>如果是单个值，可以如下：</p>
+<p>如果是多个值，可以传json string。</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/zjpjay/article/details/103694844">参考</a></p>
+</li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>班殿宏</span>
+                    </p>
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020 班殿宏 版权所有</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="../../../../tags/WKWebView-JS/"># WKWebView&JS</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="../../../06/08/%E4%B8%80%E5%BC%A0%E5%9B%BE%E6%90%9E%E5%AE%9Aios-framework%E9%87%8D%E7%AD%BE/">一张图搞定ios framework重签</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 班殿宏 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
