@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-07-09T03:04:31.420Z</updated>
+  <updated>2021-07-12T15:02:55.679Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>两个网站教你如何免费翻墙</title>
+    <link href="http://example.com/2021/07/12/%E4%B8%A4%E4%B8%AA%E7%BD%91%E7%AB%99%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E7%BF%BB%E5%A2%99/"/>
+    <id>http://example.com/2021/07/12/%E4%B8%A4%E4%B8%AA%E7%BD%91%E7%AB%99%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E7%BF%BB%E5%A2%99/</id>
+    <published>2021-07-12T14:38:30.000Z</published>
+    <updated>2021-07-12T15:02:55.679Z</updated>
+    
+    <content type="html"><![CDATA[<p>网站1：<a href="https://community.torproject.org/">Tor</a></p><p>网站2：<a href="http://free-proxy.cz/">免费代理服务器</a></p><ul><li><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3></li></ul><p>​    翻墙一般我们使用代理服务器，这里我们使用免费代理服务器来完成，如果平时浏览网页看视频基本够用了。</p><ul><li><h3 id="为什么用Tor"><a href="#为什么用Tor" class="headerlink" title="为什么用Tor"></a>为什么用Tor</h3></li></ul><p>​    Tor是一款很安全和私密的浏览器，如果你用过chrome你会发现，代理都需要到系统设置里去设置，如果你只想在浏览器做代理，chrome是办不到的。不过Tor有一不好的地方是访问会比较慢，但是为了翻墙你可以接受的。</p><ul><li><h3 id="Tor的代理配置"><a href="#Tor的代理配置" class="headerlink" title="Tor的代理配置"></a>Tor的代理配置</h3></li></ul><p>​    假设你已经安装好了Tor，并且免费代理服务器的IP和端口号你也拿到了。这里我们用SOCKS5作为例子。配置Tor只需要勾选代理并填好服务器和端口号就可以。如图。</p><p><img src="https://img.wenhairu.com/images/2021/07/12/9sbON.png"></p><ul><li><h3 id="一些免费代理服务器列表"><a href="#一些免费代理服务器列表" class="headerlink" title="一些免费代理服务器列表"></a>一些免费代理服务器列表</h3></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">51.222.12.245:10084</span><br><span class="line">51.222.121.242:9300</span><br><span class="line">51.222.123.217:9300</span><br><span class="line">51.222.123.216:9300</span><br><span class="line">51.222.121.239:9300</span><br><span class="line">51.222.123.210:9300</span><br><span class="line">51.222.121.245:9300</span><br><span class="line">51.222.123.191:9300</span><br><span class="line">167.172.141.70:43959</span><br><span class="line">51.222.123.214:9300</span><br><span class="line">51.222.123.212:9300</span><br><span class="line">54.205.23.148:1080</span><br><span class="line">47.253.43.183:8888</span><br><span class="line">51.222.123.203:9300</span><br><span class="line">191.96.42.80:1080</span><br><span class="line">147.135.112.67:3081</span><br><span class="line">18.116.54.118:1080</span><br><span class="line">74.123.21.22:56576</span><br><span class="line">51.222.123.194:9300</span><br><span class="line">38.91.106.204:30829</span><br><span class="line">154.91.32.78:1080</span><br><span class="line">34.211.41.50:1080</span><br><span class="line">104.255.170.196:9300</span><br><span class="line">67.213.212.16:48428</span><br><span class="line">72.210.252.137:4145</span><br><span class="line">72.223.168.67:4145</span><br><span class="line">198.199.86.11:1080</span><br><span class="line">72.217.216.239:4145</span><br><span class="line">72.206.181.123:4145</span><br><span class="line">70.166.167.36:4145</span><br><span class="line">184.179.216.130:4145</span><br><span class="line">98.185.83.111:4145</span><br><span class="line">98.185.83.105:12752</span><br><span class="line">72.221.196.145:4145</span><br><span class="line">98.162.25.23:4145</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;网站1：&lt;a href=&quot;https://community.torproject.org/&quot;&gt;Tor&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;网站2：&lt;a href=&quot;http://free-proxy.cz/&quot;&gt;免费代理服务器&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&quot;原理&quot;&gt;&lt;</summary>
+      
+    
+    
+    
+    
+    <category term="翻墙" scheme="http://example.com/tags/%E7%BF%BB%E5%A2%99/"/>
+    
+  </entry>
   
   <entry>
     <title>WKWebView与js交互的注意事项</title>
@@ -443,28 +468,6 @@
     
     
     <category term="ArcGis 天地图" scheme="http://example.com/tags/ArcGis-%E5%A4%A9%E5%9C%B0%E5%9B%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>浅说苹果内购流程</title>
-    <link href="http://example.com/2020/12/02/%E6%B5%85%E8%AF%B4%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD%E6%B5%81%E7%A8%8B/"/>
-    <id>http://example.com/2020/12/02/%E6%B5%85%E8%AF%B4%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD%E6%B5%81%E7%A8%8B/</id>
-    <published>2020-12-02T03:21:38.000Z</published>
-    <updated>2020-12-03T16:50:29.833Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="权威文档"><a href="#权威文档" class="headerlink" title="权威文档"></a>权威文档</h1><p>​    <a href="https://developer.apple.com/cn/in-app-purchase/">App 内购买项目</a></p><h1 id="基本要素"><a href="#基本要素" class="headerlink" title="基本要素"></a>基本要素</h1><p>​    哪些是基本要素呢？比如你得有开发者账号，你得会创建应用，你得先同意appstore后台的付费用户协议，只有这几个都有了你才能进行内购。</p><h1 id="创建内购项目"><a href="#创建内购项目" class="headerlink" title="创建内购项目"></a>创建内购项目</h1><img src="https://img.wenhairu.com/images/2020/12/02/WMxHj.png" style="zoom:50%;" /><p><img src="https://img.wenhairu.com/images/2020/12/02/WP6eg.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPAAK.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPmG3.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPq4o.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPFhf.md.png"></p><p>​    截图用手机截图。这些资料都填上，不然会报元数据丢失的错。填完点保存就可以了。</p><h1 id="创建sandbox测试账号"><a href="#创建sandbox测试账号" class="headerlink" title="创建sandbox测试账号"></a>创建sandbox测试账号</h1><p>​    在用户和访问-&gt;沙盒测试员里添加测试账号。</p><p>​    <img src="https://img.wenhairu.com/images/2020/12/02/WPYDd.md.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/02/WPfcH.png"></p><p>​    注意：</p><p>​        1、这里的电子邮件必须填写一个新注册的邮箱，不然你就等着采坑吧。点击确认以后，会受到一封同意邀请的邮件，点击里面的同意邀请测试账号就算创建好了。</p><p>​        2、密码你得记好了，以后用来登陆到测试账号的。</p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>​        支付代码在我的Github有。<a href="https://github.com/reference/QTIAPManager">支付代码</a></p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.jianshu.com/p/72748db72a77">https://www.jianshu.com/p/72748db72a77</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;权威文档&quot;&gt;&lt;a href=&quot;#权威文档&quot; class=&quot;headerlink&quot; title=&quot;权威文档&quot;&gt;&lt;/a&gt;权威文档&lt;/h1&gt;&lt;p&gt;​    &lt;a href=&quot;https://developer.apple.com/cn/in-app-purchase/&quot;</summary>
-      
-    
-    
-    
-    
-    <category term="苹果内购" scheme="http://example.com/tags/%E8%8B%B9%E6%9E%9C%E5%86%85%E8%B4%AD/"/>
     
   </entry>
   

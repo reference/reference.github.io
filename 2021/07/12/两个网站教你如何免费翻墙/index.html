@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="班殿宏">
+
+
+    <meta name="subtitle" content="这是一个工作博客">
+
+
+
+
+<title>两个网站教你如何免费翻墙 | 🅱️an</title>
+
+
+
+    <link rel="icon" href="../../../../favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="../../../../css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="../../../../js/script.js"></script>
+    
+    <script src="../../../../js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="atom.xml" title="🅱️an" type="application/atom+xml">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">🅱️</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="../../../../archives">Posts</a>
+                
+                    <a class="menu-item" href="../../../../tags">Tags</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">🅱️</a><a id="mobile-toggle-theme">·&nbsp;</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="../../../../archives">Posts</a>
+                
+                    <a class="menu-item" href="../../../../tags">Tags</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">底部</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">两个网站教你如何免费翻墙</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">班殿宏</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2021年07月12日&nbsp;&nbsp;22:38:30</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>网站1：<a target="_blank" rel="noopener" href="https://community.torproject.org/">Tor</a></p>
+<p>网站2：<a target="_blank" rel="noopener" href="http://free-proxy.cz/">免费代理服务器</a></p>
+<ul>
+<li><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3></li>
+</ul>
+<p>​    翻墙一般我们使用代理服务器，这里我们使用免费代理服务器来完成，如果平时浏览网页看视频基本够用了。</p>
+<ul>
+<li><h3 id="为什么用Tor"><a href="#为什么用Tor" class="headerlink" title="为什么用Tor"></a>为什么用Tor</h3></li>
+</ul>
+<p>​    Tor是一款很安全和私密的浏览器，如果你用过chrome你会发现，代理都需要到系统设置里去设置，如果你只想在浏览器做代理，chrome是办不到的。不过Tor有一不好的地方是访问会比较慢，但是为了翻墙你可以接受的。</p>
+<ul>
+<li><h3 id="Tor的代理配置"><a href="#Tor的代理配置" class="headerlink" title="Tor的代理配置"></a>Tor的代理配置</h3></li>
+</ul>
+<p>​    假设你已经安装好了Tor，并且免费代理服务器的IP和端口号你也拿到了。这里我们用SOCKS5作为例子。配置Tor只需要勾选代理并填好服务器和端口号就可以。如图。</p>
+<p><img src="https://img.wenhairu.com/images/2021/07/12/9sbON.png"></p>
+<ul>
+<li><h3 id="一些免费代理服务器列表"><a href="#一些免费代理服务器列表" class="headerlink" title="一些免费代理服务器列表"></a>一些免费代理服务器列表</h3></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">51.222.12.245:10084</span><br><span class="line">51.222.121.242:9300</span><br><span class="line">51.222.123.217:9300</span><br><span class="line">51.222.123.216:9300</span><br><span class="line">51.222.121.239:9300</span><br><span class="line">51.222.123.210:9300</span><br><span class="line">51.222.121.245:9300</span><br><span class="line">51.222.123.191:9300</span><br><span class="line">167.172.141.70:43959</span><br><span class="line">51.222.123.214:9300</span><br><span class="line">51.222.123.212:9300</span><br><span class="line">54.205.23.148:1080</span><br><span class="line">47.253.43.183:8888</span><br><span class="line">51.222.123.203:9300</span><br><span class="line">191.96.42.80:1080</span><br><span class="line">147.135.112.67:3081</span><br><span class="line">18.116.54.118:1080</span><br><span class="line">74.123.21.22:56576</span><br><span class="line">51.222.123.194:9300</span><br><span class="line">38.91.106.204:30829</span><br><span class="line">154.91.32.78:1080</span><br><span class="line">34.211.41.50:1080</span><br><span class="line">104.255.170.196:9300</span><br><span class="line">67.213.212.16:48428</span><br><span class="line">72.210.252.137:4145</span><br><span class="line">72.223.168.67:4145</span><br><span class="line">198.199.86.11:1080</span><br><span class="line">72.217.216.239:4145</span><br><span class="line">72.206.181.123:4145</span><br><span class="line">70.166.167.36:4145</span><br><span class="line">184.179.216.130:4145</span><br><span class="line">98.185.83.111:4145</span><br><span class="line">98.185.83.105:12752</span><br><span class="line">72.221.196.145:4145</span><br><span class="line">98.162.25.23:4145</span><br></pre></td></tr></table></figure>
+
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>班殿宏</span>
+                    </p>
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020 班殿宏 版权所有</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="../../../../tags/%E7%BF%BB%E5%A2%99/"># 翻墙</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="../../09/WKWebView%E4%B8%8Ejs%E4%BA%A4%E4%BA%92%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">WKWebView与js交互的注意事项</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 班殿宏 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
