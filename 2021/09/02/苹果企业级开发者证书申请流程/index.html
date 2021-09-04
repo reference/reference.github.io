@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="班殿宏">
+
+
+    <meta name="subtitle" content="这是一个工作博客">
+
+
+
+
+<title>苹果企业级开发者证书申请流程 | 🅱️an</title>
+
+
+
+    <link rel="icon" href="../../../../favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="../../../../css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="../../../../js/script.js"></script>
+    
+    <script src="../../../../js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="atom.xml" title="🅱️an" type="application/atom+xml">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">🅱️</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="../../../../archives">Posts</a>
+                
+                    <a class="menu-item" href="../../../../tags">Tags</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">🅱️</a><a id="mobile-toggle-theme">·&nbsp;</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="../../../../archives">Posts</a>
+                
+                    <a class="menu-item" href="../../../../tags">Tags</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">底部</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">苹果企业级开发者证书申请流程</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">班殿宏</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2021年09月02日&nbsp;&nbsp;12:31:48</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h2 id="一、准备资料"><a href="#一、准备资料" class="headerlink" title="一、准备资料"></a>一、准备资料</h2><hr>
+<p>1、企业/政府机构信息</p>
+<table>
+<thead>
+<tr>
+<th><strong>企业/政府机构实体名称（英文）</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>企业/政府机构官方网址</strong></td>
+</tr>
+<tr>
+<td><strong>电话号码</strong></td>
+</tr>
+<tr>
+<td><strong>企业/政府机构所在地址（英文和中文) （市/镇、州/省）</strong></td>
+</tr>
+<tr>
+<td><strong>企业/政府机构关联的邮箱（常说的带企业域名的邮箱）</strong></td>
+</tr>
+<tr>
+<td><em>邓白氏编码（企业必须，政府机构非必须）</em></td>
+</tr>
+<tr>
+<td><strong>邮政编码</strong></td>
+</tr>
+<tr>
+<td><strong>员工人数</strong></td>
+</tr>
+</tbody></table>
+<p>2、账户持有人/负责人信息</p>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>身份证号码</strong></td>
+</tr>
+<tr>
+<td><strong>联系号码</strong></td>
+</tr>
+<tr>
+<td><strong>住址（市/镇、州/省）</strong></td>
+</tr>
+<tr>
+<td><strong>人脸识别</strong></td>
+</tr>
+<tr>
+<td><strong>电子邮箱</strong></td>
+</tr>
+<tr>
+<td><strong>邮政编码</strong></td>
+</tr>
+</tbody></table>
+<h2 id="二、Apple-ID申请及双重认证"><a href="#二、Apple-ID申请及双重认证" class="headerlink" title="二、Apple ID申请及双重认证"></a>二、Apple ID申请及双重认证</h2><hr>
+<p>账户持有人/负责人需要使用企业/政府机构关联的邮箱申请Apple ID，并完成双重认证。</p>
+<p>Apple ID申请地址：<a target="_blank" rel="noopener" href="https://appleid.apple.com/account">https://appleid.apple.com/account</a></p>
+<p>双重认证参考：<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204915">https://support.apple.com/zh-cn/HT204915</a></p>
+<h2 id="三、验证身份"><a href="#三、验证身份" class="headerlink" title="三、验证身份"></a>三、验证身份</h2><hr>
+<p>在进行企业级开发者证书申请之前，需要账户持有人验证身份。在通过验证后，该身份将与账户持有人的 Apple ID 相关联，并且无法通过登录其他 Apple ID 来再次验证。</p>
+<ul>
+<li><p>验证身份之前需要在苹果设备（iPhone或者iPad）上登陆即将用来申请企业级开发者账号的Apple ID，并且开启双重认证，且手机必须设置好锁屏密码。</p>
+</li>
+<li><p>到苹果商店下载应用：<a target="_blank" rel="noopener" href="https://apps.apple.com/cn/app/wwdc/id640199958">Apple Developer</a>。使用Apple Developer验证账户持有人的身份。</p>
+</li>
+</ul>
+<p>验证详细流程参考说明：</p>
+<h2 id="四、打电话给苹果技术顾问"><a href="#四、打电话给苹果技术顾问" class="headerlink" title="四、打电话给苹果技术顾问"></a>四、打电话给苹果技术顾问</h2><hr>
+<p>身份验证完成以后，需要给苹果的技术顾问打电话，说明已完成身份验证，要申请企业级开发者账号。等待技术顾问处理完，我们就可以到网页去继续申请企业级开发者账号了。</p>
+<p>苹果技术顾问联系方式：<a target="_blank" rel="noopener" href="https://developer.apple.com/contact/topic/select">https://developer.apple.com/contact/topic/select</a></p>
+<p>具体流程步骤：会员资格和账户-&gt;计划注册-&gt;电话-&gt;立即与开发者支持顾问通话。如图：</p>
+<img src="/Users/admin/Library/Application Support/typora-user-images/image-20210903163637852.png" alt="image-20210903163637852" style="zoom:20%;" />
+
+<img src="/Users/admin/Library/Application Support/typora-user-images/image-20210903163921762.png" alt="image-20210903163921762" style="zoom:20%;" />
+
+<img src="/Users/admin/Library/Application Support/typora-user-images/image-20210903170748608.png" alt="image-20210903170748608" style="zoom:20%;" />
+
+<img src="/Users/admin/Library/Application Support/typora-user-images/image-20210903170834031.png" alt="image-20210903170834031" style="zoom:20%;" />
+
+<p>苹果的技术顾问会回拨我们输入的电话。</p>
+<p>小提示：无论遇到任何问题，联系技术顾问都是首要的解决方案。</p>
+<h2 id="五、填写企业-政府机构资料"><a href="#五、填写企业-政府机构资料" class="headerlink" title="五、填写企业/政府机构资料"></a>五、填写企业/政府机构资料</h2><hr>
+<p>经过了打电话给苹果技术顾问说明要申请企业开发者账号之后，需要我们进一步填写企业的信息。</p>
+<p>填写资料需要在网页进行，网页地址：<a target="_blank" rel="noopener" href="https://developer.apple.com/cn/programs/enterprise/">https://developer.apple.com/cn/programs/enterprise/</a></p>
+<p>![image-20210903171619933](/Users/admin/Library/Application Support/typora-user-images/image-20210903171619933.png)</p>
+<p>选择分发方式为：<strong>仅在我的组织内部使用的专属app</strong></p>
+<p>点击开始填写申请表格，就来到了如下的界面：</p>
+<p>![image-20210903172257166](/Users/admin/Library/Application Support/typora-user-images/image-20210903172257166.png)</p>
+<p>![image-20210903172530060](/Users/admin/Library/Application Support/typora-user-images/image-20210903172530060.png)</p>
+<p>![image-20210903172900423](/Users/admin/Library/Application Support/typora-user-images/image-20210903172900423.png)</p>
+<p>![image-20210903172731412](/Users/admin/Library/Application Support/typora-user-images/image-20210903172731412.png)</p>
+<p>![image-20210903173016536](/Users/admin/Library/Application Support/typora-user-images/image-20210903173016536.png)</p>
+<p>点击继续，确认信息。</p>
+<p>![image-20210903173148528](/Users/admin/Library/Application Support/typora-user-images/image-20210903173148528.png)</p>
+<p>![image-20210903173227756](/Users/admin/Library/Application Support/typora-user-images/image-20210903173227756.png)</p>
+<p>![image-20210903173257257](/Users/admin/Library/Application Support/typora-user-images/image-20210903173257257.png)</p>
+<p>至此，资料提交就走完了。接下来需要等待苹果公司对资质的审核。</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>班殿宏</span>
+                    </p>
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020 班殿宏 版权所有</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="../../../../tags/%E4%BC%81%E4%B8%9A%E7%BA%A7%E5%BC%80%E5%8F%91%E8%80%85/"># 企业级开发者</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="../../../07/28/mac%E4%B8%8A%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8wine%E8%BF%90%E8%A1%8Cwindows%E7%A8%8B%E5%BA%8F/">mac上如何使用wine运行windows程序</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 班殿宏 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>

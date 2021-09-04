@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-07-12T15:02:55.679Z</updated>
+  <updated>2021-09-03T19:42:03.098Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>苹果企业级开发者证书申请流程</title>
+    <link href="http://example.com/2021/09/02/%E8%8B%B9%E6%9E%9C%E4%BC%81%E4%B8%9A%E7%BA%A7%E5%BC%80%E5%8F%91%E8%80%85%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B/"/>
+    <id>http://example.com/2021/09/02/%E8%8B%B9%E6%9E%9C%E4%BC%81%E4%B8%9A%E7%BA%A7%E5%BC%80%E5%8F%91%E8%80%85%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B/</id>
+    <published>2021-09-02T04:31:48.000Z</published>
+    <updated>2021-09-03T19:42:03.098Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、准备资料"><a href="#一、准备资料" class="headerlink" title="一、准备资料"></a>一、准备资料</h2><hr><p>1、企业/政府机构信息</p><table><thead><tr><th><strong>企业/政府机构实体名称（英文）</strong></th></tr></thead><tbody><tr><td><strong>企业/政府机构官方网址</strong></td></tr><tr><td><strong>电话号码</strong></td></tr><tr><td><strong>企业/政府机构所在地址（英文和中文) （市/镇、州/省）</strong></td></tr><tr><td><strong>企业/政府机构关联的邮箱（常说的带企业域名的邮箱）</strong></td></tr><tr><td><em>邓白氏编码（企业必须，政府机构非必须）</em></td></tr><tr><td><strong>邮政编码</strong></td></tr><tr><td><strong>员工人数</strong></td></tr></tbody></table><p>2、账户持有人/负责人信息</p><table><thead><tr><th>姓名</th></tr></thead><tbody><tr><td><strong>身份证号码</strong></td></tr><tr><td><strong>联系号码</strong></td></tr><tr><td><strong>住址（市/镇、州/省）</strong></td></tr><tr><td><strong>人脸识别</strong></td></tr><tr><td><strong>电子邮箱</strong></td></tr><tr><td><strong>邮政编码</strong></td></tr></tbody></table><h2 id="二、Apple-ID申请及双重认证"><a href="#二、Apple-ID申请及双重认证" class="headerlink" title="二、Apple ID申请及双重认证"></a>二、Apple ID申请及双重认证</h2><hr><p>账户持有人/负责人需要使用企业/政府机构关联的邮箱申请Apple ID，并完成双重认证。</p><p>Apple ID申请地址：<a href="https://appleid.apple.com/account">https://appleid.apple.com/account</a></p><p>双重认证参考：<a href="https://support.apple.com/zh-cn/HT204915">https://support.apple.com/zh-cn/HT204915</a></p><h2 id="三、验证身份"><a href="#三、验证身份" class="headerlink" title="三、验证身份"></a>三、验证身份</h2><hr><p>在进行企业级开发者证书申请之前，需要账户持有人验证身份。在通过验证后，该身份将与账户持有人的 Apple ID 相关联，并且无法通过登录其他 Apple ID 来再次验证。</p><ul><li><p>验证身份之前需要在苹果设备（iPhone或者iPad）上登陆即将用来申请企业级开发者账号的Apple ID，并且开启双重认证，且手机必须设置好锁屏密码。</p></li><li><p>到苹果商店下载应用：<a href="https://apps.apple.com/cn/app/wwdc/id640199958">Apple Developer</a>。使用Apple Developer验证账户持有人的身份。</p></li></ul><p>验证详细流程参考说明：</p><h2 id="四、打电话给苹果技术顾问"><a href="#四、打电话给苹果技术顾问" class="headerlink" title="四、打电话给苹果技术顾问"></a>四、打电话给苹果技术顾问</h2><hr><p>身份验证完成以后，需要给苹果的技术顾问打电话，说明已完成身份验证，要申请企业级开发者账号。等待技术顾问处理完，我们就可以到网页去继续申请企业级开发者账号了。</p><p>苹果技术顾问联系方式：<a href="https://developer.apple.com/contact/topic/select">https://developer.apple.com/contact/topic/select</a></p><p>具体流程步骤：会员资格和账户-&gt;计划注册-&gt;电话-&gt;立即与开发者支持顾问通话。如图：</p><img src="/Users/admin/Library/Application Support/typora-user-images/image-20210903163637852.png" alt="image-20210903163637852" style="zoom:20%;" /><img src="/Users/admin/Library/Application Support/typora-user-images/image-20210903163921762.png" alt="image-20210903163921762" style="zoom:20%;" /><img src="/Users/admin/Library/Application Support/typora-user-images/image-20210903170748608.png" alt="image-20210903170748608" style="zoom:20%;" /><img src="/Users/admin/Library/Application Support/typora-user-images/image-20210903170834031.png" alt="image-20210903170834031" style="zoom:20%;" /><p>苹果的技术顾问会回拨我们输入的电话。</p><p>小提示：无论遇到任何问题，联系技术顾问都是首要的解决方案。</p><h2 id="五、填写企业-政府机构资料"><a href="#五、填写企业-政府机构资料" class="headerlink" title="五、填写企业/政府机构资料"></a>五、填写企业/政府机构资料</h2><hr><p>经过了打电话给苹果技术顾问说明要申请企业开发者账号之后，需要我们进一步填写企业的信息。</p><p>填写资料需要在网页进行，网页地址：<a href="https://developer.apple.com/cn/programs/enterprise/">https://developer.apple.com/cn/programs/enterprise/</a></p><p>![image-20210903171619933](/Users/admin/Library/Application Support/typora-user-images/image-20210903171619933.png)</p><p>选择分发方式为：<strong>仅在我的组织内部使用的专属app</strong></p><p>点击开始填写申请表格，就来到了如下的界面：</p><p>![image-20210903172257166](/Users/admin/Library/Application Support/typora-user-images/image-20210903172257166.png)</p><p>![image-20210903172530060](/Users/admin/Library/Application Support/typora-user-images/image-20210903172530060.png)</p><p>![image-20210903172900423](/Users/admin/Library/Application Support/typora-user-images/image-20210903172900423.png)</p><p>![image-20210903172731412](/Users/admin/Library/Application Support/typora-user-images/image-20210903172731412.png)</p><p>![image-20210903173016536](/Users/admin/Library/Application Support/typora-user-images/image-20210903173016536.png)</p><p>点击继续，确认信息。</p><p>![image-20210903173148528](/Users/admin/Library/Application Support/typora-user-images/image-20210903173148528.png)</p><p>![image-20210903173227756](/Users/admin/Library/Application Support/typora-user-images/image-20210903173227756.png)</p><p>![image-20210903173257257](/Users/admin/Library/Application Support/typora-user-images/image-20210903173257257.png)</p><p>至此，资料提交就走完了。接下来需要等待苹果公司对资质的审核。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;一、准备资料&quot;&gt;&lt;a href=&quot;#一、准备资料&quot; class=&quot;headerlink&quot; title=&quot;一、准备资料&quot;&gt;&lt;/a&gt;一、准备资料&lt;/h2&gt;&lt;hr&gt;
+&lt;p&gt;1、企业/政府机构信息&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;</summary>
+      
+    
+    
+    
+    
+    <category term="企业级开发者" scheme="http://example.com/tags/%E4%BC%81%E4%B8%9A%E7%BA%A7%E5%BC%80%E5%8F%91%E8%80%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mac上如何使用wine运行windows程序</title>
+    <link href="http://example.com/2021/07/28/mac%E4%B8%8A%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8wine%E8%BF%90%E8%A1%8Cwindows%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://example.com/2021/07/28/mac%E4%B8%8A%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8wine%E8%BF%90%E8%A1%8Cwindows%E7%A8%8B%E5%BA%8F/</id>
+    <published>2021-07-28T02:47:02.000Z</published>
+    <updated>2021-07-28T02:56:35.336Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Wine官网"><a href="#Wine官网" class="headerlink" title="Wine官网"></a><a href="https://www.winehq.org/">Wine官网</a></h3><h3 id="什么是Win"><a href="#什么是Win" class="headerlink" title="什么是Win?"></a>什么是Win?</h3><p>Wine （“Wine Is Not an Emulator” 的首字母缩写）是一个能够在多种 POSIX-compliant 操作系统（诸如 Linux，macOS 及 BSD 等）上运行 Windows 应用的兼容层。Wine 不是像虚拟机或者模拟器一样模仿内部的 Windows 逻辑，而是將 Windows API 调用翻译成为动态的 POSIX 调用，免除了性能和其他一些行为的内存占用，让你能够干净地集合 Windows 应用到你的桌面。</p><h3 id="如何安装"><a href="#如何安装" class="headerlink" title="如何安装"></a>如何安装</h3><ul><li>下载</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;Wine官网&quot;&gt;&lt;a href=&quot;#Wine官网&quot; class=&quot;headerlink&quot; title=&quot;Wine官网&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.winehq.org/&quot;&gt;Wine官网&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;什么是Win&quot;&gt;&lt;a </summary>
+      
+    
+    
+    
+    
+    <category term="wine &amp; Mac" scheme="http://example.com/tags/wine-Mac/"/>
+    
+  </entry>
   
   <entry>
     <title>两个网站教你如何免费翻墙</title>
@@ -419,55 +468,6 @@
     
     
     <category term="PS人像修图" scheme="http://example.com/tags/PS%E4%BA%BA%E5%83%8F%E4%BF%AE%E5%9B%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac 上好用的工具软件</title>
-    <link href="http://example.com/2020/12/04/Mac-%E4%B8%8A%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
-    <id>http://example.com/2020/12/04/Mac-%E4%B8%8A%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</id>
-    <published>2020-12-03T17:26:27.000Z</published>
-    <updated>2020-12-03T17:46:58.093Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li><p>Typora</p><p>官网：<a href="https://typora.io/">https://typora.io/</a></p><p>点评：用过最好用的markdown写作神器，没有之一。</p></li><li><p>Irvue</p><p>官网：AppStore上</p><p>点评：别再为桌面壁纸发愁了，高清免费，每天定时更换桌面，想自己换也可以。</p></li><li><p>Luminar</p><p>官网：<a href="https://www.luminartech.com/">https://www.luminartech.com/</a></p><p>点评：付费软件，高级的修图神器，支持RAW，无损图片质量，简单好用，有14天免费试用</p></li><li><p>DaVinci Resolve</p><p>官网：<a href="http://www.blackmagicdesign.com/products/davinciresolve/">http://www.blackmagicdesign.com/products/davinciresolve/</a></p><p>点评：电影工业唯一使用的后期调色工业软件，有免费版本，已经够使用了</p></li><li><p>Trojan-qt5</p><p>官网：<a href="https://tlanyan.me/trojan-clients-download/">https://tlanyan.me/trojan-clients-download/</a></p><p>点评：翻墙利器，稳定高速，收费，需要找到服务器</p></li><li><p>Charles</p><p>官网：<a href="https://www.charlesproxy.com/">https://www.charlesproxy.com/</a></p><p>点评：网络拦截</p></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Typora&lt;/p&gt;
-&lt;p&gt;官网：&lt;a href=&quot;https://typora.io/&quot;&gt;https://typora.io/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;点评：用过最好用的markdown写作神器，没有之一。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Irvue&lt;/</summary>
-      
-    
-    
-    
-    
-    <category term="Mac 工具" scheme="http://example.com/tags/Mac-%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IOS ArcGiS 加载天地图</title>
-    <link href="http://example.com/2020/12/04/IOS-ArcGiS-%E5%8A%A0%E8%BD%BD%E5%A4%A9%E5%9C%B0%E5%9B%BE/"/>
-    <id>http://example.com/2020/12/04/IOS-ArcGiS-%E5%8A%A0%E8%BD%BD%E5%A4%A9%E5%9C%B0%E5%9B%BE/</id>
-    <published>2020-12-03T16:27:07.000Z</published>
-    <updated>2020-12-03T17:04:41.514Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="天地图"><a href="#天地图" class="headerlink" title="天地图"></a>天地图</h1><p>​    一般用惯了百度地图和高德地图的人会问，这是个啥玩意。老实说我也不知道，但是做项目要用，国企项目经常用。这次给中国地震局做了一个活动断层勘察的app就用到了。本来用webview就能解决，但是考虑到勘察人员要去的地方可能没有网络，所以要考虑离线。甲方爸爸指定用天地图，所以用到了ArcGiS加载天地图瓦片来架构。这是个新奇的东西。网上资料寥寥无几，大概在github上找到了两个例子，连接地址放在最后。别现在就去看，给点面子让我教教你行么。</p><p>​    官网：<a href="http://lbs.tianditu.gov.cn/home.html">http://lbs.tianditu.gov.cn/home.html</a></p><h1 id="ArcGIS"><a href="#ArcGIS" class="headerlink" title="ArcGIS"></a>ArcGIS</h1><p>​    这个玩意用来干啥？GIS的意思大概就是跟地图相关，我写这篇文章没打算给你解释清楚是啥，你只要大概知道这是干啥的就达到我写文章的目的了。你见过加班回来还给你写博客教你东西的么，差不多得了。</p><p>​    这个玩意用一句话概括就是地图上能干啥都用它，划线，画点，画面，公交车路线，测量，标记，标注，你能看到在地图上能干的事情，基本都是用它来干的。这个玩意是个开源，被一个叫做esri的组织维护，官网：<a href="https://developers.arcgis.com/">https://developers.arcgis.com/</a></p><p>​    ArcGIS提供了很多平台的SDK支持，IOS、安卓、h5都有，一般IOS获得的方式很简单。就是下面这句：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pod &#39;ArcGIS-Runtime-SDK-iOS&#39;</span><br></pre></td></tr></table></figure><p>​    文档这里看：<a href="https://developers.arcgis.com/labs/browse/?product=ios&amp;topic=any">https://developers.arcgis.com/labs/browse/?product=ios&amp;topic=any</a></p><p>​    学点英文吧骚年，不然你可能像我一样，只能借助谷歌翻译。</p><p>​    加载地图跟使用苹果自带的MapKit很相似，加载一个地图也容易。但是加载瓦片地图就得大概知道些技术了。瓦片是什么？瓦片，其实就是一小块地图的图片，ArcGIS就像一个引擎一样，去加载很多图片，最后拼凑成一个完整的地图。在天地图里，通过url获得地图瓦片。</p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://github.com/xiaoyeZhang/ArcGisMapTool">https://github.com/xiaoyeZhang/ArcGisMapTool</a></p><p><a href="https://github.com/makeling/CustomTianDiTuLayerV100.0-ObjC">https://github.com/makeling/CustomTianDiTuLayerV100.0-ObjC</a></p><p><a href="https://github.com/crash-wu/SGLocationObjC">https://github.com/crash-wu/SGLocationObjC</a></p><p><a href="https://github.com/crash-wu/SGLocationUtil">https://github.com/crash-wu/SGLocationUtil</a></p><p>聚合的解决方案，案例，房屋中介地图找房</p><p><a href="https://github.com/xjf1990930/ArcGis-iOS-Cluster">https://github.com/xjf1990930/ArcGis-iOS-Cluster</a></p><p><a href="https://blog.csdn.net/weixin_30912051/article/details/94798193">https://blog.csdn.net/weixin_30912051/article/details/94798193</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;天地图&quot;&gt;&lt;a href=&quot;#天地图&quot; class=&quot;headerlink&quot; title=&quot;天地图&quot;&gt;&lt;/a&gt;天地图&lt;/h1&gt;&lt;p&gt;​    一般用惯了百度地图和高德地图的人会问，这是个啥玩意。老实说我也不知道，但是做项目要用，国企项目经常用。这次给中国地震局做了</summary>
-      
-    
-    
-    
-    
-    <category term="ArcGis 天地图" scheme="http://example.com/tags/ArcGis-%E5%A4%A9%E5%9C%B0%E5%9B%BE/"/>
     
   </entry>
   
