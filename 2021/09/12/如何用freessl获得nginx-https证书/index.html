@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="班殿宏">
+
+
+    <meta name="subtitle" content="这是一个工作博客">
+
+
+
+
+<title>如何用freessl获得nginx https证书 | 🅱️an</title>
+
+
+
+    <link rel="icon" href="../../../../favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="../../../../css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="../../../../js/script.js"></script>
+    
+    <script src="../../../../js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="atom.xml" title="🅱️an" type="application/atom+xml">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">🅱️</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="../../../../archives">Posts</a>
+                
+                    <a class="menu-item" href="../../../../tags">Tags</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">🅱️</a><a id="mobile-toggle-theme">·&nbsp;</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="../../../../archives">Posts</a>
+                
+                    <a class="menu-item" href="../../../../tags">Tags</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">如何用freessl获得nginx https证书</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">班殿宏</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2021年09月12日&nbsp;&nbsp;0:02:09</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p><a target="_blank" rel="noopener" href="https://freessl.cn/login">https://freessl.cn/login</a></p>
+<p>注册登录</p>
+<img src="https://img.wenhairu.com/images/2021/10/11/1REaB.png" alt="image-20210912000403652" style="zoom:50%;" />
+
+<img src="https://img.wenhairu.com/images/2021/10/11/1RUPn.png" alt="image-20210912000454384" style="zoom:50%;" />
+
+<img src="https://img.wenhairu.com/images/2021/10/11/1RazA.png" style="zoom:50%;" />
+
+<img src="https://img.wenhairu.com/images/2021/10/11/1R9JT.jpg" alt="image-20210912000551121" style="zoom:50%;" />
+
+<p>没有下载KeyManager的先下载，下载完了打开，设置好密码。从KeyManager生成证书预览后回到浏览器点击继续，然后。</p>
+<img src="https://img.wenhairu.com/images/2021/10/11/1RGoG.png" alt="image-20210912002042628" style="zoom:50%;" />
+
+<p>到域名解析服务商那里填写这些值并开启</p>
+<img src="https://img.wenhairu.com/images/2021/10/11/1R1dv.png" alt="image-20210912002231861" style="zoom:50%;" />
+
+<p>到这个网站去测试是否已经成功：<a target="_blank" rel="noopener" href="https://myssl.com/dns_check.html?domain=jihejingjia.cn&amp;brand=2&amp;type=2&amp;txt=KCJcZbY8avWx3a8pFmqk9nOhNlgP_Hs5jBJyPtHCh74#ssl_verify">https://myssl.com/dns_check.html?domain=jihejingjia.cn&amp;brand=2&amp;type=2&amp;txt=KCJcZbY8avWx3a8pFmqk9nOhNlgP_Hs5jBJyPtHCh74#ssl_verify</a></p>
+<img src="https://img.wenhairu.com/images/2021/10/11/1R5F0.png" alt="image-20210912002335763" style="zoom:50%;" />
+
+<p>在KeyManager上申请。</p>
+<p><img src="https://img.wenhairu.com/images/2021/10/11/1RnnU.png" alt="image-20210912001013881"></p>
+<p><img src="https://img.wenhairu.com/images/2021/10/11/1RyTj.png" alt="image-20210912001050031"></p>
+<p><img src="https://img.wenhairu.com/images/2021/10/11/1RHxg.png" alt="image-20210912001152732"></p>
+<p><img src="https://img.wenhairu.com/images/2021/10/11/1RRuK.png" alt="image-20210912001213682"></p>
+<p><img src="https://img.wenhairu.com/images/2021/10/11/1RkP3.png" alt="image-20210912001250887"></p>
+<p>nginx配置</p>
+<p>把上面导出的两个文件放到服务器一个目录下</p>
+<img src="https://img.wenhairu.com/images/2021/10/11/1Rozo.png" alt="image-20210912002539813" style="zoom:50%;" />
+
+<p>配置nginx.conf文件</p>
+<p><img src="https://img.wenhairu.com/images/2021/10/11/1RSKf.png" alt="image-20210912002630849"></p>
+<p>重启nginx</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pkill -9 nginx</span><br><span class="line">/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf</span><br></pre></td></tr></table></figure>
+
+<p>参考：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/wangcp-2014/p/9922845.html">https://www.cnblogs.com/wangcp-2014/p/9922845.html</a></p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>班殿宏</span>
+                    </p>
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020 班殿宏 版权所有</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="../../../../tags/freessl-https/"># freessl https</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="../../../10/11/Kontakt-6%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BD%E5%BA%93/">Kontakt 6如何加载库</a>
+            
+            
+            <a class="next" rel="next" href="../../02/%E8%8B%B9%E6%9E%9C%E4%BC%81%E4%B8%9A%E7%BA%A7%E5%BC%80%E5%8F%91%E8%80%85%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B/">苹果企业级开发者证书申请流程</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 班殿宏 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>

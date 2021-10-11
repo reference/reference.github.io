@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-09-03T19:42:03.098Z</updated>
+  <updated>2021-10-11T04:34:33.991Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,13 +17,87 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>mac 如何暴利破解wifi密码</title>
+    <link href="http://example.com/2021/10/11/mac-%E5%A6%82%E4%BD%95%E6%9A%B4%E5%88%A9%E7%A0%B4%E8%A7%A3wifi%E5%AF%86%E7%A0%81/"/>
+    <id>http://example.com/2021/10/11/mac-%E5%A6%82%E4%BD%95%E6%9A%B4%E5%88%A9%E7%A0%B4%E8%A7%A3wifi%E5%AF%86%E7%A0%81/</id>
+    <published>2021-10-11T01:56:04.000Z</published>
+    <updated>2021-10-11T04:34:33.991Z</updated>
+    
+    <content type="html"><![CDATA[<p>准备工具：</p><p><a href="http://www.aircrack-ng.org/downloads.html">aircrack-ng</a></p><p>步骤</p><p>1、下载源码编译。</p><p><a href="https://github.com/aircrack-ng/aircrack-ng">https://github.com/aircrack-ng/aircrack-ng</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Compiling on OS X with macports (and all options):</span><br><span class="line"></span><br><span class="line">.&#x2F;configure --with-experimental</span><br><span class="line">gmake</span><br><span class="line">Compiling on macOS running on M1&#x2F;AARCH64 and Homebrew:</span><br><span class="line"></span><br><span class="line">autoreconf -vif</span><br><span class="line">env CPPFLAGS&#x3D;&quot;-Wno-deprecated-declarations&quot; .&#x2F;configure --with-experimental</span><br><span class="line">make</span><br><span class="line">make check</span><br></pre></td></tr></table></figure><p>2、教程</p><p><a href="https://www.cnblogs.com/halberd-lee/p/11400347.html">https://www.cnblogs.com/halberd-lee/p/11400347.html</a></p><p><a href="https://chaishiwei.com/blog/562.html">https://chaishiwei.com/blog/562.html</a></p><p>3、爆破字典</p><p><a href="https://github.com/rootphantomer/Blasting_dictionary">https://github.com/rootphantomer/Blasting_dictionary</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;准备工具：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.aircrack-ng.org/downloads.html&quot;&gt;aircrack-ng&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;步骤&lt;/p&gt;
+&lt;p&gt;1、下载源码编译。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://githu</summary>
+      
+    
+    
+    
+    
+    <category term="wifi破解" scheme="http://example.com/tags/wifi%E7%A0%B4%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kontakt 6如何加载库</title>
+    <link href="http://example.com/2021/10/11/Kontakt-6%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BD%E5%BA%93/"/>
+    <id>http://example.com/2021/10/11/Kontakt-6%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BD%E5%BA%93/</id>
+    <published>2021-10-11T01:24:53.000Z</published>
+    <updated>2021-10-11T01:41:48.098Z</updated>
+    
+    <content type="html"><![CDATA[<p>本篇文章仅适用于Mac电脑。</p><p><strong>准备文件：</strong></p><p><a href="https://www.native-instruments.com/zh/specials/native-access/">Native Access</a></p><p><a href="https://pirate-proxy.cam/description.php?id=35141327">Kontakt 6</a></p><p><a href="https://pirate-proxy.cam/description.php?id=15829688">Kontakt 5</a></p><p>音源文件库</p><p><strong>步骤：</strong></p><p>1、安装Native Access，安装好了以后运行。</p><p>1、安装Kontakt 6，并安装更新。</p><p>2、解压Kontakt 5压缩包，解压里面的crack压缩包，复制里面的kontakt 5到应用程序里跟kontakt 6放在同一级目录：</p><p>【应用程序】-&gt;【Navitive Instruments】-&gt;【Kontakt】</p><p>3、加载音源库。因为kontakt 6不能加载外部音源库，所以要用kontakt 5加载。先运行kontakt 5，进入页面后点击[Libraries]-&gt;[Add Library]。选择你的音源库。点击打开就安装好了。打开kontakt 6就可以在【Libraries】里看到安装好的音源库。</p><p><strong>音源库目录结构，例如：Ashlight</strong></p><ul><li>Ashlight.nicnt</li><li>Documentation</li><li>Instruments</li><li>Samples</li><li>Snapshots</li></ul><p>-</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;本篇文章仅适用于Mac电脑。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;准备文件：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.native-instruments.com/zh/specials/native-access/&quot;&gt;Native Access</summary>
+      
+    
+    
+    
+    
+    <category term="kontakt6" scheme="http://example.com/tags/kontakt6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何用freessl获得nginx https证书</title>
+    <link href="http://example.com/2021/09/12/%E5%A6%82%E4%BD%95%E7%94%A8freessl%E8%8E%B7%E5%BE%97nginx-https%E8%AF%81%E4%B9%A6/"/>
+    <id>http://example.com/2021/09/12/%E5%A6%82%E4%BD%95%E7%94%A8freessl%E8%8E%B7%E5%BE%97nginx-https%E8%AF%81%E4%B9%A6/</id>
+    <published>2021-09-11T16:02:09.000Z</published>
+    <updated>2021-10-11T01:55:10.729Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://freessl.cn/login">https://freessl.cn/login</a></p><p>注册登录</p><img src="https://img.wenhairu.com/images/2021/10/11/1REaB.png" alt="image-20210912000403652" style="zoom:50%;" /><img src="https://img.wenhairu.com/images/2021/10/11/1RUPn.png" alt="image-20210912000454384" style="zoom:50%;" /><img src="https://img.wenhairu.com/images/2021/10/11/1RazA.png" style="zoom:50%;" /><img src="https://img.wenhairu.com/images/2021/10/11/1R9JT.jpg" alt="image-20210912000551121" style="zoom:50%;" /><p>没有下载KeyManager的先下载，下载完了打开，设置好密码。从KeyManager生成证书预览后回到浏览器点击继续，然后。</p><img src="https://img.wenhairu.com/images/2021/10/11/1RGoG.png" alt="image-20210912002042628" style="zoom:50%;" /><p>到域名解析服务商那里填写这些值并开启</p><img src="https://img.wenhairu.com/images/2021/10/11/1R1dv.png" alt="image-20210912002231861" style="zoom:50%;" /><p>到这个网站去测试是否已经成功：<a href="https://myssl.com/dns_check.html?domain=jihejingjia.cn&amp;brand=2&amp;type=2&amp;txt=KCJcZbY8avWx3a8pFmqk9nOhNlgP_Hs5jBJyPtHCh74#ssl_verify">https://myssl.com/dns_check.html?domain=jihejingjia.cn&amp;brand=2&amp;type=2&amp;txt=KCJcZbY8avWx3a8pFmqk9nOhNlgP_Hs5jBJyPtHCh74#ssl_verify</a></p><img src="https://img.wenhairu.com/images/2021/10/11/1R5F0.png" alt="image-20210912002335763" style="zoom:50%;" /><p>在KeyManager上申请。</p><p><img src="https://img.wenhairu.com/images/2021/10/11/1RnnU.png" alt="image-20210912001013881"></p><p><img src="https://img.wenhairu.com/images/2021/10/11/1RyTj.png" alt="image-20210912001050031"></p><p><img src="https://img.wenhairu.com/images/2021/10/11/1RHxg.png" alt="image-20210912001152732"></p><p><img src="https://img.wenhairu.com/images/2021/10/11/1RRuK.png" alt="image-20210912001213682"></p><p><img src="https://img.wenhairu.com/images/2021/10/11/1RkP3.png" alt="image-20210912001250887"></p><p>nginx配置</p><p>把上面导出的两个文件放到服务器一个目录下</p><img src="https://img.wenhairu.com/images/2021/10/11/1Rozo.png" alt="image-20210912002539813" style="zoom:50%;" /><p>配置nginx.conf文件</p><p><img src="https://img.wenhairu.com/images/2021/10/11/1RSKf.png" alt="image-20210912002630849"></p><p>重启nginx</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pkill -9 nginx</span><br><span class="line">/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf</span><br></pre></td></tr></table></figure><p>参考：<a href="https://www.cnblogs.com/wangcp-2014/p/9922845.html">https://www.cnblogs.com/wangcp-2014/p/9922845.html</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://freessl.cn/login&quot;&gt;https://freessl.cn/login&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;注册登录&lt;/p&gt;
+&lt;img src=&quot;https://img.wenhairu.com/images/2021/10/11/1REa</summary>
+      
+    
+    
+    
+    
+    <category term="freessl https" scheme="http://example.com/tags/freessl-https/"/>
+    
+  </entry>
+  
+  <entry>
     <title>苹果企业级开发者证书申请流程</title>
     <link href="http://example.com/2021/09/02/%E8%8B%B9%E6%9E%9C%E4%BC%81%E4%B8%9A%E7%BA%A7%E5%BC%80%E5%8F%91%E8%80%85%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B/"/>
     <id>http://example.com/2021/09/02/%E8%8B%B9%E6%9E%9C%E4%BC%81%E4%B8%9A%E7%BA%A7%E5%BC%80%E5%8F%91%E8%80%85%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B/</id>
     <published>2021-09-02T04:31:48.000Z</published>
-    <updated>2021-09-03T19:42:03.098Z</updated>
+    <updated>2021-10-11T01:54:59.713Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="一、准备资料"><a href="#一、准备资料" class="headerlink" title="一、准备资料"></a>一、准备资料</h2><hr><p>1、企业/政府机构信息</p><table><thead><tr><th><strong>企业/政府机构实体名称（英文）</strong></th></tr></thead><tbody><tr><td><strong>企业/政府机构官方网址</strong></td></tr><tr><td><strong>电话号码</strong></td></tr><tr><td><strong>企业/政府机构所在地址（英文和中文) （市/镇、州/省）</strong></td></tr><tr><td><strong>企业/政府机构关联的邮箱（常说的带企业域名的邮箱）</strong></td></tr><tr><td><em>邓白氏编码（企业必须，政府机构非必须）</em></td></tr><tr><td><strong>邮政编码</strong></td></tr><tr><td><strong>员工人数</strong></td></tr></tbody></table><p>2、账户持有人/负责人信息</p><table><thead><tr><th>姓名</th></tr></thead><tbody><tr><td><strong>身份证号码</strong></td></tr><tr><td><strong>联系号码</strong></td></tr><tr><td><strong>住址（市/镇、州/省）</strong></td></tr><tr><td><strong>人脸识别</strong></td></tr><tr><td><strong>电子邮箱</strong></td></tr><tr><td><strong>邮政编码</strong></td></tr></tbody></table><h2 id="二、Apple-ID申请及双重认证"><a href="#二、Apple-ID申请及双重认证" class="headerlink" title="二、Apple ID申请及双重认证"></a>二、Apple ID申请及双重认证</h2><hr><p>账户持有人/负责人需要使用企业/政府机构关联的邮箱申请Apple ID，并完成双重认证。</p><p>Apple ID申请地址：<a href="https://appleid.apple.com/account">https://appleid.apple.com/account</a></p><p>双重认证参考：<a href="https://support.apple.com/zh-cn/HT204915">https://support.apple.com/zh-cn/HT204915</a></p><h2 id="三、验证身份"><a href="#三、验证身份" class="headerlink" title="三、验证身份"></a>三、验证身份</h2><hr><p>在进行企业级开发者证书申请之前，需要账户持有人验证身份。在通过验证后，该身份将与账户持有人的 Apple ID 相关联，并且无法通过登录其他 Apple ID 来再次验证。</p><ul><li><p>验证身份之前需要在苹果设备（iPhone或者iPad）上登陆即将用来申请企业级开发者账号的Apple ID，并且开启双重认证，且手机必须设置好锁屏密码。</p></li><li><p>到苹果商店下载应用：<a href="https://apps.apple.com/cn/app/wwdc/id640199958">Apple Developer</a>。使用Apple Developer验证账户持有人的身份。</p></li></ul><p>验证详细流程参考说明：</p><h2 id="四、打电话给苹果技术顾问"><a href="#四、打电话给苹果技术顾问" class="headerlink" title="四、打电话给苹果技术顾问"></a>四、打电话给苹果技术顾问</h2><hr><p>身份验证完成以后，需要给苹果的技术顾问打电话，说明已完成身份验证，要申请企业级开发者账号。等待技术顾问处理完，我们就可以到网页去继续申请企业级开发者账号了。</p><p>苹果技术顾问联系方式：<a href="https://developer.apple.com/contact/topic/select">https://developer.apple.com/contact/topic/select</a></p><p>具体流程步骤：会员资格和账户-&gt;计划注册-&gt;电话-&gt;立即与开发者支持顾问通话。如图：</p><img src="/Users/admin/Library/Application Support/typora-user-images/image-20210903163637852.png" alt="image-20210903163637852" style="zoom:20%;" /><img src="/Users/admin/Library/Application Support/typora-user-images/image-20210903163921762.png" alt="image-20210903163921762" style="zoom:20%;" /><img src="/Users/admin/Library/Application Support/typora-user-images/image-20210903170748608.png" alt="image-20210903170748608" style="zoom:20%;" /><img src="/Users/admin/Library/Application Support/typora-user-images/image-20210903170834031.png" alt="image-20210903170834031" style="zoom:20%;" /><p>苹果的技术顾问会回拨我们输入的电话。</p><p>小提示：无论遇到任何问题，联系技术顾问都是首要的解决方案。</p><h2 id="五、填写企业-政府机构资料"><a href="#五、填写企业-政府机构资料" class="headerlink" title="五、填写企业/政府机构资料"></a>五、填写企业/政府机构资料</h2><hr><p>经过了打电话给苹果技术顾问说明要申请企业开发者账号之后，需要我们进一步填写企业的信息。</p><p>填写资料需要在网页进行，网页地址：<a href="https://developer.apple.com/cn/programs/enterprise/">https://developer.apple.com/cn/programs/enterprise/</a></p><p>![image-20210903171619933](/Users/admin/Library/Application Support/typora-user-images/image-20210903171619933.png)</p><p>选择分发方式为：<strong>仅在我的组织内部使用的专属app</strong></p><p>点击开始填写申请表格，就来到了如下的界面：</p><p>![image-20210903172257166](/Users/admin/Library/Application Support/typora-user-images/image-20210903172257166.png)</p><p>![image-20210903172530060](/Users/admin/Library/Application Support/typora-user-images/image-20210903172530060.png)</p><p>![image-20210903172900423](/Users/admin/Library/Application Support/typora-user-images/image-20210903172900423.png)</p><p>![image-20210903172731412](/Users/admin/Library/Application Support/typora-user-images/image-20210903172731412.png)</p><p>![image-20210903173016536](/Users/admin/Library/Application Support/typora-user-images/image-20210903173016536.png)</p><p>点击继续，确认信息。</p><p>![image-20210903173148528](/Users/admin/Library/Application Support/typora-user-images/image-20210903173148528.png)</p><p>![image-20210903173227756](/Users/admin/Library/Application Support/typora-user-images/image-20210903173227756.png)</p><p>![image-20210903173257257](/Users/admin/Library/Application Support/typora-user-images/image-20210903173257257.png)</p><p>至此，资料提交就走完了。接下来需要等待苹果公司对资质的审核。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="一、准备资料"><a href="#一、准备资料" class="headerlink" title="一、准备资料"></a>一、准备资料</h2><hr><p>1、企业/政府机构信息</p><table><thead><tr><th><strong>企业/政府机构实体名称（英文）</strong></th></tr></thead><tbody><tr><td><strong>企业/政府机构官方网址</strong></td></tr><tr><td><strong>电话号码</strong></td></tr><tr><td><strong>企业/政府机构所在地址（英文和中文) （市/镇、州/省）</strong></td></tr><tr><td><strong>企业/政府机构关联的邮箱（常说的带企业域名的邮箱）</strong></td></tr><tr><td><em>邓白氏编码（企业必须，政府机构非必须）</em></td></tr><tr><td><strong>邮政编码</strong></td></tr><tr><td><strong>员工人数</strong></td></tr></tbody></table><p>2、账户持有人/负责人信息</p><table><thead><tr><th>姓名</th></tr></thead><tbody><tr><td><strong>身份证号码</strong></td></tr><tr><td><strong>联系号码</strong></td></tr><tr><td><strong>住址（市/镇、州/省）</strong></td></tr><tr><td><strong>人脸识别</strong></td></tr><tr><td><strong>电子邮箱</strong></td></tr><tr><td><strong>邮政编码</strong></td></tr></tbody></table><h2 id="二、Apple-ID申请及双重认证"><a href="#二、Apple-ID申请及双重认证" class="headerlink" title="二、Apple ID申请及双重认证"></a>二、Apple ID申请及双重认证</h2><hr><p>账户持有人/负责人需要使用企业/政府机构关联的邮箱申请Apple ID，并完成双重认证。</p><p>Apple ID申请地址：<a href="https://appleid.apple.com/account">https://appleid.apple.com/account</a></p><p>双重认证参考：<a href="https://support.apple.com/zh-cn/HT204915">https://support.apple.com/zh-cn/HT204915</a></p><h2 id="三、验证身份"><a href="#三、验证身份" class="headerlink" title="三、验证身份"></a>三、验证身份</h2><hr><p>在进行企业级开发者证书申请之前，需要账户持有人验证身份。在通过验证后，该身份将与账户持有人的 Apple ID 相关联，并且无法通过登录其他 Apple ID 来再次验证。</p><ul><li><p>验证身份之前需要在苹果设备（iPhone或者iPad）上登陆即将用来申请企业级开发者账号的Apple ID，并且开启双重认证，且手机必须设置好锁屏密码。</p></li><li><p>到苹果商店下载应用：<a href="https://apps.apple.com/cn/app/wwdc/id640199958">Apple Developer</a>。使用Apple Developer验证账户持有人的身份。</p></li></ul><p>验证详细流程参考说明：<a href="https://blog.csdn.net/lianai911/article/details/107975066">https://blog.csdn.net/lianai911/article/details/107975066</a></p><p>官方文档：<a href="https://developer.apple.com/cn/support/app-account/#verify">https://developer.apple.com/cn/support/app-account/#verify</a></p><h2 id="四、打电话给苹果技术顾问"><a href="#四、打电话给苹果技术顾问" class="headerlink" title="四、打电话给苹果技术顾问"></a>四、打电话给苹果技术顾问</h2><hr><p>身份验证完成以后，需要给苹果的技术顾问打电话，说明已完成身份验证，要申请企业级开发者账号。等待技术顾问处理完，我们就可以到网页去继续申请企业级开发者账号了。</p><p>苹果技术顾问联系方式：<a href="https://developer.apple.com/contact/topic/select">https://developer.apple.com/contact/topic/select</a></p><p>具体流程步骤：会员资格和账户-&gt;计划注册-&gt;电话-&gt;立即与开发者支持顾问通话。如图：</p><img src="https://img.wenhairu.com/images/2021/09/06/GRc3G.png" alt="image-20210903163637852" style="zoom:20%;" /><img src="https://img.wenhairu.com/images/2021/09/06/GRMfv.png" alt="image-20210903163921762" style="zoom:20%;" /><img src="https://img.wenhairu.com/images/2021/09/06/GRPQ0.png" alt="image-20210903170748608" style="zoom:20%;" /><img src="https://img.wenhairu.com/images/2021/09/06/GRZBU.png" alt="image-20210903170834031" style="zoom:20%;" /><p>苹果的技术顾问会回拨我们输入的电话。</p><p>小提示：无论遇到任何问题，联系技术顾问都是首要的解决方案。</p><h2 id="五、填写企业-政府机构资料"><a href="#五、填写企业-政府机构资料" class="headerlink" title="五、填写企业/政府机构资料"></a>五、填写企业/政府机构资料</h2><hr><p>经过了打电话给苹果技术顾问说明要申请企业开发者账号之后，需要我们进一步填写企业的信息。</p><p>填写资料需要在网页进行，网页地址：<a href="https://developer.apple.com/cn/programs/enterprise/">https://developer.apple.com/cn/programs/enterprise/</a></p><p><img src="https://img.wenhairu.com/images/2021/09/06/GR4Aj.png" alt="image-20210903171619933"></p><p>选择分发方式为：<strong>仅在我的组织内部使用的专属app</strong></p><p>点击开始填写申请表格，就来到了如下的界面：</p><p><img src="https://img.wenhairu.com/images/2021/09/06/GRI1g.png" alt="image-20210903172257166"></p><p><img src="https://img.wenhairu.com/images/2021/09/06/GROIK.md.png" alt="image-20210903172530060"></p><p><img src="https://img.wenhairu.com/images/2021/09/06/GRTh3.png" alt="image-20210903172900423"></p><p><img src="https://img.wenhairu.com/images/2021/09/06/GRXEo.png" alt="image-20210903172731412"></p><p><img src="https://img.wenhairu.com/images/2021/09/06/GRegf.png" alt="image-20210903173016536"></p><p>点击继续，确认信息。</p><p><img src="https://img.wenhairu.com/images/2021/09/06/GRB3d.png" alt="image-20210903173148528"></p><p><img src="https://img.wenhairu.com/images/2021/09/06/GRdwH.png" alt="image-20210903173227756"></p><p><img src="https://img.wenhairu.com/images/2021/09/06/GRiRq.png" alt="image-20210903173257257"></p><p>至此，资料提交就走完了。接下来需要等待苹果公司对资质的审核。</p><h2 id="六、收到苹果审核反馈邮件"><a href="#六、收到苹果审核反馈邮件" class="headerlink" title="六、收到苹果审核反馈邮件"></a>六、收到苹果审核反馈邮件</h2><hr><p><img src="https://img.wenhairu.com/images/2021/09/07/GcRWu.png" alt="WX20210907-194325@2x"></p><p>回复的大概内容如下：</p><p><img src="https://img.wenhairu.com/images/2021/09/07/Gck7h.png"></p>]]></content>
     
     
       
@@ -402,72 +476,6 @@
     
     
     <category term="Realm" scheme="http://example.com/tags/Realm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mac2020 M1芯片下YYKit依赖的webP不支持模拟器编译解决方案</title>
-    <link href="http://example.com/2020/12/09/mac2020-M1%E8%8A%AF%E7%89%87%E4%B8%8BYYKit%E4%BE%9D%E8%B5%96%E7%9A%84webP%E4%B8%8D%E6%94%AF%E6%8C%81%E6%A8%A1%E6%8B%9F%E5%99%A8%E7%BC%96%E8%AF%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
-    <id>http://example.com/2020/12/09/mac2020-M1%E8%8A%AF%E7%89%87%E4%B8%8BYYKit%E4%BE%9D%E8%B5%96%E7%9A%84webP%E4%B8%8D%E6%94%AF%E6%8C%81%E6%A8%A1%E6%8B%9F%E5%99%A8%E7%BC%96%E8%AF%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</id>
-    <published>2020-12-09T06:32:55.000Z</published>
-    <updated>2020-12-09T06:41:58.925Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>新版MacBook Pro 由于采用了M1芯片代替了原先的，有些库并不支持。如果项目中用到了YYKit，那恭喜你这个问题一定会遇到。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">in &#x2F;Users&#x2F;admin&#x2F;Desktop&#x2F;x&#x2F;code&#x2F;AFDAS&#x2F;Pods&#x2F;YYKit&#x2F;Vendor&#x2F;WebP.framework&#x2F;WebP(libwebpencode_la-config.o), building for iOS Simulator, but linking in object file built for iOS, for architecture arm64</span><br></pre></td></tr></table></figure><h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>最简单的解决方案就是替换掉/YYKit/Vendor/WebP.framework。webP是Google开发的一个库，所以我们直接去官网下载这个库。</p><p>我们找到2020年12月的这个版本，因为macbook是11月发布的。</p><p>下载地址：[<a href="http://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.1.0-rc2-ios-framework.tar.gz">libwebp-1.1.0-rc2-ios-framework.tar.gz</a>]</p><p><a href="http://downloads.webmproject.org/releases/webp/index.html">官方网址</a></p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://github.com/Xunqf/libwebp">https://github.com/Xunqf/libwebp</a></p><p><a href="https://www.jianshu.com/p/1f427707f922?utm_campaign=hugo">iOS利用SDWebImage加载webP图片</a></p><p><a href="https://www.jianshu.com/p/a74bc04a8c8c">解决sdwebimage/webp 与 yykit 的冲突</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h1&gt;&lt;p&gt;新版MacBook Pro 由于采用了M1芯片代替了原先的，有些库并不支持。如果项目中用到了YYKit，那恭喜你这个问题一定会遇到。&lt;/p&gt;</summary>
-      
-    
-    
-    
-    
-    <category term="webP" scheme="http://example.com/tags/webP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SwiftUI 是历史的进步还是倒退？</title>
-    <link href="http://example.com/2020/12/05/SwiftUI-%E6%98%AF%E5%8E%86%E5%8F%B2%E7%9A%84%E8%BF%9B%E6%AD%A5%E8%BF%98%E6%98%AF%E5%80%92%E9%80%80%EF%BC%9F/"/>
-    <id>http://example.com/2020/12/05/SwiftUI-%E6%98%AF%E5%8E%86%E5%8F%B2%E7%9A%84%E8%BF%9B%E6%AD%A5%E8%BF%98%E6%98%AF%E5%80%92%E9%80%80%EF%BC%9F/</id>
-    <published>2020-12-05T07:17:02.000Z</published>
-    <updated>2020-12-05T07:25:07.539Z</updated>
-    
-    <content type="html"><![CDATA[<p>​        今天说说swiftui，算是一个老程序员的心声。第一次看到swiftui的时候，内心还是很欢喜的，但是在接触了一下想要用于项目的时候，我犹豫了。为什么呢？作为一个从2011年就开始被各种手写UI折磨的人来说，swiftui并没有真正解决我的需求，反而是storyboard解决了我的需求。我们都知道，在快速出产品占领市场的年代，如果速度慢就有可能一个项目就此黄了。我也经历了不少这样的项目。之前用过一个叫做Beeframework的框架，它的ui架构核心思想跟swiftui很相似，都试图用h5那一套思路来解决布局的问题，但是很麻烦，维护也不好维护。我个人认为，这个界面布局的发展应该是这样的：手写界面–&gt;swiftui–&gt;storyboard，但是现在是这样：手写界面-storyboard-swiftui。试问一下，哪个程序员喜欢写代码？如果妥妥拽拽就解决问题，效率还更高，何乐不为呢？</p><p>​        SwiftUI,I say No.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;​        今天说说swiftui，算是一个老程序员的心声。第一次看到swiftui的时候，内心还是很欢喜的，但是在接触了一下想要用于项目的时候，我犹豫了。为什么呢？作为一个从2011年就开始被各种手写UI折磨的人来说，swiftui并没有真正解决我的需求，反而是st</summary>
-      
-    
-    
-    
-    
-    <category term="SwiftUI" scheme="http://example.com/tags/SwiftUI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PS 人像修图教程</title>
-    <link href="http://example.com/2020/12/04/PS-%E4%BA%BA%E5%83%8F%E4%BF%AE%E5%9B%BE%E6%95%99%E7%A8%8B/"/>
-    <id>http://example.com/2020/12/04/PS-%E4%BA%BA%E5%83%8F%E4%BF%AE%E5%9B%BE%E6%95%99%E7%A8%8B/</id>
-    <published>2020-12-04T04:55:48.000Z</published>
-    <updated>2020-12-04T06:07:15.804Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="课程"><a href="#课程" class="headerlink" title="课程"></a>课程</h1><p><img src="https://img.alicdn.com/imgextra/i2/3350662477/TB2hEXektfJ8KJjy0FeXXXKEXXa_!!3350662477.png"></p><p><img src="https://img.alicdn.com/imgextra/i2/3350662477/TB2WA6adRfM8KJjSZFrXXXSdXXa_!!3350662477.png"></p><p><img src="https://img.alicdn.com/imgextra/i1/3350662477/TB2oUS7dFYM8KJjSZFuXXcf7FXa_!!3350662477.png"></p><p><img src="https://img.alicdn.com/imgextra/i1/3350662477/TB2GBradKLM8KJjSZFqXXa7.FXa_!!3350662477.png"></p><p><img src="https://img.alicdn.com/imgextra/i2/3350662477/TB28DCic7fb_uJkSnfoXXb_epXa_!!3350662477.png"></p><p><img src="https://img.alicdn.com/imgextra/i1/3350662477/TB2v3xca6b.heNjSZFAXXchKXXa_!!3350662477.png"></p><h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><p><img src="https://img.alicdn.com/imgextra/i3/3350662477/TB2ScDJiNrI8KJjy0FpXXb5hVXa_!!3350662477.jpg"></p><p><img src="https://img.alicdn.com/imgextra/i2/3350662477/TB25KztiRHH8KJjy0FbXXcqlpXa_!!3350662477.jpg"></p><p><img src="https://img.alicdn.com/imgextra/i3/3350662477/TB2M8pWdlfM8KJjSZFhXXcRyFXa_!!3350662477.jpg"></p><p><img src="https://img.alicdn.com/imgextra/i2/3350662477/TB2SpcBi_TI8KJjSsphXXcFppXa_!!3350662477.jpg"></p><p><img src="https://img.alicdn.com/imgextra/i3/3350662477/TB2oVUqiILJ8KJjy0FnXXcFDpXa_!!3350662477.jpg"></p><p><img src="https://img.alicdn.com/imgextra/i3/3350662477/TB26.WIj0nJ8KJjSszdXXaxuFXa_!!3350662477.jpg"></p><p><img src="https://img.alicdn.com/imgextra/i2/3350662477/TB2MR.wikfb_uJjSsrbXXb6bVXa_!!3350662477.jpg"></p><p><img src="https://img.alicdn.com/imgextra/i3/3350662477/TB2QQGUjL2H8KJjy1zkXXXr7pXa_!!3350662477.jpg"></p><p><img src="https://img.alicdn.com/imgextra/i4/3350662477/TB25xvgjILJ8KJjy0FnXXcFDpXa_!!3350662477.jpg"></p><h1 id="工具插件"><a href="#工具插件" class="headerlink" title="工具插件"></a>工具插件</h1><ul><li><a href="https://www.imagenomic.com/Products/Portraiture">Portraiture</a></li><li><a href="https://imagenomic.com/Products/Noiseware">Noiseware</a></li></ul><h1 id="PS-Neural-Filters"><a href="#PS-Neural-Filters" class="headerlink" title="PS Neural Filters"></a>PS Neural Filters</h1><p>Ps 内部滤镜，Portraiture的磨皮我感觉已经赶不上里面的皮肤平滑度了。</p><p><img src="https://img.wenhairu.com/images/2020/12/04/WTm1p.png"></p><p><img src="https://img.wenhairu.com/images/2020/12/04/WOxQH.png"></p><h1 id="RAW-免费图片下载"><a href="#RAW-免费图片下载" class="headerlink" title="RAW 免费图片下载"></a>RAW 免费图片下载</h1><p><a href="https://www.signatureedits.com/free-raw-photos/">这个网站</a></p><h1 id="相关课程"><a href="#相关课程" class="headerlink" title="相关课程"></a>相关课程</h1><p><a href="https://zhuanlan.zhihu.com/p/69088929">中性灰磨皮</a></p><p><a href="https://zhuanlan.zhihu.com/p/42707092">拍照技巧</a></p><p><a href="https://www.instagram.com/gilmarphotos/?hl=ja">Gilmar’Silva</a></p><h1 id="淘宝课程"><a href="#淘宝课程" class="headerlink" title="淘宝课程"></a>淘宝课程</h1><p><a href="https://detail.tmall.com/item.htm?spm=a220l.1.0.0.e23f7f33eVultV&amp;id=613205175423">https://detail.tmall.com/item.htm?spm=a220l.1.0.0.e23f7f33eVultV&amp;id=613205175423</a></p><p><a href="https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.196.2a0be8aacadj4w&amp;id=555959556398&amp;areaId=110100&amp;user_id=3350662477&amp;cat_id=2&amp;is_b=1&amp;rn=138fac5f179fdf14cfe9edddce1b4677">https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.196.2a0be8aacadj4w&amp;id=555959556398&amp;areaId=110100&amp;user_id=3350662477&amp;cat_id=2&amp;is_b=1&amp;rn=138fac5f179fdf14cfe9edddce1b4677</a></p><p><a href="https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.1.61e8e8aajO5meH&amp;id=570372422824&amp;areaId=110100&amp;user_id=3350662477&amp;cat_id=2&amp;is_b=1&amp;rn=2b4186fed069e90be5e918b0be57e485">https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.1.61e8e8aajO5meH&amp;id=570372422824&amp;areaId=110100&amp;user_id=3350662477&amp;cat_id=2&amp;is_b=1&amp;rn=2b4186fed069e90be5e918b0be57e485</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;课程&quot;&gt;&lt;a href=&quot;#课程&quot; class=&quot;headerlink&quot; title=&quot;课程&quot;&gt;&lt;/a&gt;课程&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://img.alicdn.com/imgextra/i2/3350662477/TB2hEXektfJ8KJ</summary>
-      
-    
-    
-    
-    
-    <category term="PS人像修图" scheme="http://example.com/tags/PS%E4%BA%BA%E5%83%8F%E4%BF%AE%E5%9B%BE/"/>
     
   </entry>
   
