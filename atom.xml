@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-11T04:34:33.991Z</updated>
+  <updated>2021-12-08T03:17:34.167Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>企业证书生成</title>
+    <link href="http://example.com/2021/12/08/%E4%BC%81%E4%B8%9A%E8%AF%81%E4%B9%A6%E7%94%9F%E6%88%90/"/>
+    <id>http://example.com/2021/12/08/%E4%BC%81%E4%B8%9A%E8%AF%81%E4%B9%A6%E7%94%9F%E6%88%90/</id>
+    <published>2021-12-08T03:05:32.000Z</published>
+    <updated>2021-12-08T03:17:34.167Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文只介绍发布证书的生成，开发证书生成类似。</p><p>1、Certificates</p><p>New -&gt; In-House and Ad Hoc -&gt; Choose File -&gt; Done</p><p>2、Identifiers</p><p>New -&gt; App IDs -&gt; Register an App ID -&gt; Done</p><p>注意，Deployment Details根据情况勾选。如图：</p><p><img src="https://img.wenhairu.com/images/2021/12/08/pD9Es.png" alt="image-20211208111328979"></p><p>3、Profiles</p><p>New -&gt; In House -&gt; Select an App ID -&gt; Select Certificates -&gt; Review, Name and Generate -&gt; Done</p><p>另：VPN签名证书生成类似，但不可使用发布证书做VPN签名。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;本文只介绍发布证书的生成，开发证书生成类似。&lt;/p&gt;
+&lt;p&gt;1、Certificates&lt;/p&gt;
+&lt;p&gt;New -&amp;gt; In-House and Ad Hoc -&amp;gt; Choose File -&amp;gt; Done&lt;/p&gt;
+&lt;p&gt;2、Identifiers&lt;/p&gt;
+&lt;</summary>
+      
+    
+    
+    
+    
+    <category term="企业证书" scheme="http://example.com/tags/%E4%BC%81%E4%B8%9A%E8%AF%81%E4%B9%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>mac 如何暴利破解wifi密码</title>
@@ -453,29 +479,6 @@
     
     
     <category term="plist" scheme="http://example.com/tags/plist/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Realm</title>
-    <link href="http://example.com/2020/12/12/Realm/"/>
-    <id>http://example.com/2020/12/12/Realm/</id>
-    <published>2020-12-11T17:08:14.000Z</published>
-    <updated>2020-12-11T17:10:50.246Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Realm 用于替代sqlite</p><h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><p>Realm的源码地址：<a href="https://github.com/realm/realm-cocoa">https://github.com/realm/realm-cocoa</a></p><p>编译使用到<a href="https://github.com/realm/jazzy">jazzy</a></p><h1 id="jazzy"><a href="#jazzy" class="headerlink" title="jazzy"></a>jazzy</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jazzy is a command-line utility that generates documentation for Swift or Objective-C</span><br></pre></td></tr></table></figure><h1 id="数据库工具"><a href="#数据库工具" class="headerlink" title="数据库工具"></a>数据库工具</h1><p><a href="https://realm.io/products/realm-studio/">Realm-Studio</a></p><p>Mac 下载地址：<a href="https://realm.io/docs">https://realm.io/docs</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;Realm 用于替代sqlite&lt;/p&gt;
-&lt;h1 id=&quot;编译&quot;&gt;&lt;a href=&quot;#编译&quot; class=&quot;headerlink&quot; titl</summary>
-      
-    
-    
-    
-    
-    <category term="Realm" scheme="http://example.com/tags/Realm/"/>
     
   </entry>
   
