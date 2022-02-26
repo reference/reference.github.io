@@ -14,7 +14,7 @@
 
 
 
-<title>企业证书生成 | 🅱️an</title>
+<title>如何用tor浏览器科学上网 | 🅱️an</title>
 
 
 
@@ -102,11 +102,72 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">底部</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">企业证书生成</h1>
+            <h1 class="post-title">如何用tor浏览器科学上网</h1>
             
                 <div class="post-meta">
                     
@@ -115,7 +176,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">2021年12月08日&nbsp;&nbsp;11:05:32</a>
+                        Date: <a href="#">2022年02月26日&nbsp;&nbsp;10:45:22</a>
                         </span>
                     
                     
@@ -124,16 +185,15 @@
         </header>
 
         <div class="post-content">
-            <p>本文只介绍发布证书的生成，开发证书生成类似。</p>
-<p>1、Certificates</p>
-<p>New -&gt; In-House and Ad Hoc -&gt; Choose File -&gt; Done</p>
-<p>2、Identifiers</p>
-<p>New -&gt; App IDs -&gt; Register an App ID -&gt; Done</p>
-<p>注意，Deployment Details根据情况勾选。如图：</p>
-<p><img src="https://img.wenhairu.com/images/2021/12/08/pD9Es.png" alt="image-20211208111328979"></p>
-<p>3、Profiles</p>
-<p>New -&gt; In House -&gt; Select an App ID -&gt; Select Certificates -&gt; Review, Name and Generate -&gt; Done</p>
-<p>另：VPN签名证书生成类似，但不可使用发布证书做VPN签名。</p>
+            <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>本文旨在使用国外免费服务器配合洋葱浏览器免费科学上网。</p>
+<h2 id="Tor浏览器下载"><a href="#Tor浏览器下载" class="headerlink" title="Tor浏览器下载"></a>Tor浏览器下载</h2><p>下载地址：<a target="_blank" rel="noopener" href="https://www.torproject.org/">Tor浏览器</a></p>
+<h2 id="免费服务器地址："><a href="#免费服务器地址：" class="headerlink" title="免费服务器地址："></a>免费服务器地址：</h2><p>地址1：<a target="_blank" rel="noopener" href="https://proxy.mimvp.com/freeopen?proxy=out_socks">https://proxy.mimvp.com/freeopen?proxy=out_socks</a></p>
+<p>地址2：<a target="_blank" rel="noopener" href="https://community.torproject.org/">https://community.torproject.org/</a></p>
+<h2 id="设置浏览器代理"><a href="#设置浏览器代理" class="headerlink" title="设置浏览器代理"></a>设置浏览器代理</h2><p>打开tor浏览器，找到设置里的服务器设置，把免费浏览器设置到代理里。如图：</p>
+<p><img src="https://s1.imagehub.cc/images/2022/02/26/image.png"></p>
+<p><img src="https://s1.imagehub.cc/images/2022/02/26/image9b2736eb2f41ff75.png"></p>
+<p><img src="https://s1.imagehub.cc/images/2022/02/26/image3be2f9da8bdf7cdd.png"></p>
+<p>连接成功以后就可以了。</p>
 
         </div>
 
@@ -162,7 +222,7 @@
                 <span class="tag">
                     
                     
-                        <a href="../../../../tags/%E4%BC%81%E4%B8%9A%E8%AF%81%E4%B9%A6/"># 企业证书</a>
+                        <a href="../../../../tags/tor-%E6%B4%8B%E8%91%B1%E6%B5%8F%E8%A7%88%E5%99%A8-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"># tor 洋葱浏览器 科学上网</a>
                     
                         
                 </span>
@@ -175,10 +235,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="../../../../2022/02/26/%E5%A6%82%E4%BD%95%E7%94%A8tor%E6%B5%8F%E8%A7%88%E5%99%A8%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">如何用tor浏览器科学上网</a>
             
-            
-            <a class="next" rel="next" href="../../../10/11/mac-%E5%A6%82%E4%BD%95%E6%9A%B4%E5%88%A9%E7%A0%B4%E8%A7%A3wifi%E5%AF%86%E7%A0%81/">mac 如何暴利破解wifi密码</a>
+            <a class="next" rel="next" href="../../../../2021/12/08/%E4%BC%81%E4%B8%9A%E8%AF%81%E4%B9%A6%E7%94%9F%E6%88%90/">企业证书生成</a>
             
         </section>
 
