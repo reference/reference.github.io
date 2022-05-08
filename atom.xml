@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-26T07:40:53.383Z</updated>
+  <updated>2022-05-08T06:42:05.853Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>3个你应该知道的暗网网站</title>
+    <link href="http://example.com/2022/05/08/3%E4%B8%AA%E4%BD%A0%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E6%9A%97%E7%BD%91%E7%BD%91%E7%AB%99/"/>
+    <id>http://example.com/2022/05/08/3%E4%B8%AA%E4%BD%A0%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E6%9A%97%E7%BD%91%E7%BD%91%E7%AB%99/</id>
+    <published>2022-05-08T06:37:20.000Z</published>
+    <updated>2022-05-08T06:42:05.853Z</updated>
+    
+    <content type="html"><![CDATA[<p>知道tor的朋友应该都不陌生，以下推荐三个暗网网站。</p><p>1、The Hidden Wiki</p><p>网址：<a href="http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/">http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion</a></p><p>这是一个很好的暗网入口网站，里面内容保罗万象，甚至是一个权威的暗网网站。</p><p>2、TG</p><p>网址：<a href="http://galaxy3yrfbwlwo72q3v2wlyjinqr2vejgpkxb22ll5pcpuaxlnqjiid.onion/">http://galaxy3yrfbwlwo72q3v2wlyjinqr2vejgpkxb22ll5pcpuaxlnqjiid.onion/</a></p><p>全名Torrent Galaxy，顾名思义，这是一个torrent资源站点。如果你是个影视影视爱好者，这里一定是你的最爱。</p><p>3、Mail2tor</p><p><a href="http://mail2torjgmxgexntbrmhvgluavhj7ouul5yar6ylbvjkxwqf6ixkwyd.onion/"><strong>http://mail2torjgmxgexntbrmhvgluavhj7ouul5yar6ylbvjkxwqf6ixkwyd.onion</strong></a></p><p>这是一个功能很好的匿名邮箱，能和普通邮箱进行通信。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;知道tor的朋友应该都不陌生，以下推荐三个暗网网站。&lt;/p&gt;
+&lt;p&gt;1、The Hidden Wiki&lt;/p&gt;
+&lt;p&gt;网址：&lt;a href=&quot;http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.on</summary>
+      
+    
+    
+    
+    
+    <category term="暗网" scheme="http://example.com/tags/%E6%9A%97%E7%BD%91/"/>
+    
+  </entry>
   
   <entry>
     <title>如何抄底</title>
@@ -458,28 +482,6 @@
     
     
     <category term="UITextField" scheme="http://example.com/tags/UITextField/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mysql 5.7安装</title>
-    <link href="http://example.com/2020/12/20/mysql-5-7%E5%AE%89%E8%A3%85/"/>
-    <id>http://example.com/2020/12/20/mysql-5-7%E5%AE%89%E8%A3%85/</id>
-    <published>2020-12-20T14:30:06.000Z</published>
-    <updated>2020-12-20T14:45:03.266Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h1><p><a href="https://cdn.mysql.com/archives/mysql-5.7/mysql-5.7.31-linux-glibc2.12-x86_64.tar">https://cdn.mysql.com/archives/mysql-5.7/mysql-5.7.31-linux-glibc2.12-x86_64.tar</a></p><h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><p>​    Shell登陆服务器,使用wget下载</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> wget https://cdn.mysql.com/archives/mysql-5.7/mysql-5.7.31-linux-glibc2.12-x86_64.tar</span></span><br></pre></td></tr></table></figure><h1 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> tar -xvf mysql-5.7.31-linux-glibc2.12-x86_64.tar</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> tar -xvf mysql-5.7.31-linux-glibc2.12-x86_64.tar.gz</span></span><br></pre></td></tr></table></figure><h1 id="挪一下"><a href="#挪一下" class="headerlink" title="挪一下"></a>挪一下</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> mv mysql-5.7.31-linux-glibc2.12-x86_64 /usr/<span class="built_in">local</span>/mysql</span></span><br></pre></td></tr></table></figure><h1 id="创建数据目录并赋予权限"><a href="#创建数据目录并赋予权限" class="headerlink" title="创建数据目录并赋予权限"></a>创建数据目录并赋予权限</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> mkdir -p  /data/mysql</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> chown mysql:mysql -R /data/mysql</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;下载地址&quot;&gt;&lt;a href=&quot;#下载地址&quot; class=&quot;headerlink&quot; title=&quot;下载地址&quot;&gt;&lt;/a&gt;下载地址&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.mysql.com/archives/mysql-5.7/mysql-5.7.31</summary>
-      
-    
-    
-    
-    
-    <category term="mysql5.7 linux" scheme="http://example.com/tags/mysql5-7-linux/"/>
     
   </entry>
   
